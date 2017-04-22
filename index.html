@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo - jQuery Smooth Div Scroll - Thomas Kahn</title>
+	
+	<!-- the CSS for Smooth Div Scroll -->
+	<link rel="Stylesheet" type="text/css" href="css/smoothDivScroll.css" />
+	
+	<!-- Styles for my specific scrolling content -->
+	<style type="text/css">
+
+		#makeMeScrollable,
+		#makeMeClickable
+		{
+			width:100%;
+			height: 330px;
+			position: relative;
+		}
+		
+		/* Replace the last selector for the type of element you have in
+		   your scroller. If you have div's use #makeMeScrollable div.scrollableArea div,
+		   if you have links use #makeMeScrollable div.scrollableArea a and so on. */
+		#makeMeScrollable div.scrollableArea img
+		{
+			position: relative;
+			float: left;
+			margin: 0;
+			padding: 0;
+			/* If you don't want the images in the scroller to be selectable, try the following
+			   block of code. It's just a nice feature that prevent the images from
+			   accidentally becoming selected/inverted when the user interacts with the scroller. */
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-o-user-select: none;
+			user-select: none;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div id="makeMeScrollable">
+		<img src="images/demo/field.jpg" alt="Demo image" id="field" />
+		<img src="images/demo/gnome.jpg" alt="Demo image" id="gnome" />
+		<img src="images/demo/pencils.jpg" alt="Demo image" id="pencils" />
+		<img src="images/demo/golf.jpg" alt="Demo image" id="golf" />
+		<img src="images/demo/river.jpg" alt="Demo image" id="river" />
+		<img src="images/demo/train.jpg" alt="Demo image" id="train" />
+		<img src="images/demo/leaf.jpg" alt="Demo image" id="leaf" />
+		<img src="images/demo/dog.jpg" alt="Demo image" id="dog" />
+	</div>
+
+	<hr />
+
+	<div id="makeMeClickable">
+		<img src="images/demo/stripes.gif" alt="Demo image" usemap="#demo2_map" />
+		<map name="demo2_map">
+			<area shape="rect" coords="0000,0,0249,329" href="#black_01" />
+			<area shape="rect" coords="0250,0,0499,329" href="#white_02" />
+			<area shape="rect" coords="0500,0,0749,329" href="#black_03" />
+			<area shape="rect" coords="0750,0,0999,329" href="#white_04" />
+
+			<area shape="rect" coords="1000,0,1249,329" href="#black_05" />
+			<area shape="rect" coords="1250,0,1499,329" href="#white_06" />
+			<area shape="rect" coords="1500,0,1749,329" href="#black_07" />
+			<area shape="rect" coords="1750,0,1999,329" href="#white_08" />
+
+			<area shape="rect" coords="2000,0,2249,329" href="#black_09" />
+			<area shape="rect" coords="2250,0,2499,329" href="#white_10" />
+			<area shape="rect" coords="2500,0,2749,329" href="#black_11" />
+			<area shape="rect" coords="2750,0,2999,329" href="#white_12" />
+
+			<area shape="rect" coords="3000,0,3249,329" href="#black_13" />
+			<area shape="rect" coords="3250,0,3499,329" href="#white_14" />
+			<area shape="rect" coords="3500,0,3749,329" href="#black_15" />
+			<area shape="rect" coords="3750,0,3999,329" href="#white_16" />
+		</map>
+	</div>
+
+	<!-- LOAD JAVASCRIPT LATE - JUST BEFORE THE BODY TAG 
+	     That way the browser will have loaded the images
+		 and will know the width of the images. No need to
+		 specify the width in the CSS or inline. -->
+
+	<!-- jQuery library - Please load it from Google API's -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+	<!-- jQuery UI (Custom Download containing only Widget and Effects Core)
+	     You can make your own at: http://jqueryui.com/download -->
+	<script src="js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+	
+	<!-- Latest version (3.1.4) of jQuery Mouse Wheel by Brandon Aaron
+	     You will find it here: https://github.com/brandonaaron/jquery-mousewheel -->
+	<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+
+	<!-- jQuery Kinectic (1.8.4) used for touch scrolling -->
+	<!-- https://github.com/davetayls/jquery.kinetic/ -->
+	<script src="js/jquery.kinetic.min.js" type="text/javascript"></script>
+
+	<!-- Smooth Div Scroll 1.3.1-->
+	<script src="js/source/jquery.smoothdivscroll-1.3.js" type="text/javascript"></script>
+
+	<!-- If you want to look at the uncompressed version you find it at
+	     js/jquery.smoothDivScroll-1.3.js -->
+
+	<!-- Plugin initialization -->
+	<script type="text/javascript">
+		// Initialize the plugin with no custom options
+		$(document).ready(function () {
+
+			$("div#makeMeScrollable").smoothDivScroll({
+				autoScrollingMode:			"onStart",
+                hotSpotFadeSpeed: 0,
+                touchScrolling: true
+			});
+
+			$("div#makeMeClickable").smoothDivScroll({
+				hotSpotFadeSpeed:			750,
+                scrollingHotSpotOpacity: 0.7,
+                touchScrolling: true
+			});
+		});
+	</script>
+
+</body>
+</html>
