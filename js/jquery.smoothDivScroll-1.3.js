@@ -206,7 +206,7 @@
 
                     // If the position is less then 1, it's set to 1
                     if (el.data("scrollXPos") === Infinity || el.data("scrollXPos") < 1) {
-                        el.data("scrollXPos", 1);
+                        el.data("scrollXPos", o.hotSpotScrollingStep);
                     }
                 }
             });
@@ -239,7 +239,7 @@
             });
 
             // Mouseout right hotspot - stop scrolling
-            el.data("scrollingHotSpotRight").bind("mouseup mouseleave", function () {
+            el.data("scrollingHotSpotRight").bind("mouseup mouseout", function () {
                 if (o.hotSpotScrolling) {
                     clearInterval(el.data("rightScrollingInterval"));
                     el.data("scrollXPos", 0);
@@ -268,20 +268,20 @@
 			*****************************************/
 			// Check the mouse X position and calculate
 			// the relative X position inside the left hotspot
-			el.data("scrollingHotSpotLeft").bind("mousemove", function (e) {
+			el.data("scrollingHotSpotLeft").bind("mousemove click", function (e) {
 				if (o.hotSpotScrolling) {
 					var x = el.data("hotSpotWidth") - (e.pageX - $(this).offset().left);
                     el.data("scrollXPos", o.hotSpotScrollingStep);
 
 					// If the position is less then 1, it's set to 1
 					if (el.data("scrollXPos") === Infinity || el.data("scrollXPos") < 1) {
-						el.data("scrollXPos", 1);
+                        el.data("scrollXPos", o.hotSpotScrollingStep);
 					}
 				}
 			});
 
 			// Mouseover left hotspot
-			el.data("scrollingHotSpotLeft").bind("mouseover", function () {
+            el.data("scrollingHotSpotLeft").bind("mousedown", function () {
 				if (o.hotSpotScrolling) {
 					// Stop any ongoing animations
 					el.data("scrollWrapper").stop(true, false);
@@ -307,17 +307,19 @@
 			});
 
 			// mouseout left hotspot
-			el.data("scrollingHotSpotLeft").bind("mouseout", function () {
+			el.data("scrollingHotSpotLeft").bind("mouseup mouseout", function () {
 				if (o.hotSpotScrolling) {
 					clearInterval(el.data("leftScrollingInterval"));
 					el.data("scrollXPos", 0);
-
-					// Easing out after scrolling
-					if (o.easingAfterHotSpotScrolling && el.data("enabled")) {
-						el.data("scrollWrapper").animate({ scrollLeft: el.data("scrollWrapper").scrollLeft() - o.easingAfterHotSpotScrollingDistance }, { duration: o.easingAfterHotSpotScrollingDuration, easing: o.easingAfterHotSpotScrollingFunction });
-					}
 				}
-			});
+            });
+
+            // Easing out after scrolling
+            el.data("scrollingHotSpotLeft").bind("mouseup", function () {
+                if (o.easingAfterHotSpotScrolling && el.data("enabled")) {
+                    el.data("scrollWrapper").animate({ scrollLeft: el.data("scrollWrapper").scrollLeft() - o.easingAfterHotSpotScrollingDistance }, { duration: o.easingAfterHotSpotScrollingDuration, easing: o.easingAfterHotSpotScrollingFunction });
+                }
+            });
 
 			// mousedown left hotspot (add scrolling speed booster)
 			el.data("scrollingHotSpotLeft").bind("mousedown", function () {
