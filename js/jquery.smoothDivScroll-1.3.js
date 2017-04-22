@@ -199,7 +199,7 @@
 			*****************************************/
             // Check the mouse X position and calculate 
             // the relative X position inside the right hotspot
-            el.data("scrollingHotSpotRight").bind("mousemove click", function (e) {
+            el.data("scrollingHotSpotRight").bind("mousemove click touchmove", function (e) {
                 if (o.hotSpotScrolling) {
                     var x = e.pageX - $(this).offset().left;
                     el.data("scrollXPos", o.hotSpotScrollingStep);
@@ -212,7 +212,7 @@
             });
 
             // Mouseover right hotspot - scrolling
-            el.data("scrollingHotSpotRight").bind("mousedown", function () {
+            el.data("scrollingHotSpotRight").bind("mousedown touchstart", function () {
                 if (o.hotSpotScrolling) {
                     // Stop any ongoing animations
                     el.data("scrollWrapper").stop(true, false);
@@ -239,7 +239,7 @@
             });
 
             // Mouseout right hotspot - stop scrolling
-            el.data("scrollingHotSpotRight").bind("mouseup mouseleave", function () {
+            el.data("scrollingHotSpotRight").bind("mouseup mouseleave touchend ", function () {
                 if (o.hotSpotScrolling) {
                     clearInterval(el.data("rightScrollingInterval"));
                     el.data("scrollXPos", 0);
@@ -247,7 +247,7 @@
             });
 
             // Easing out after scrolling
-             el.data("scrollingHotSpotRight").bind("mouseup", function () {
+            el.data("scrollingHotSpotRight").bind("mouseup touchend", function () {
                  if (o.easingAfterHotSpotScrolling && el.data("enabled")) {
                      el.data("scrollWrapper").animate({ scrollLeft: el.data("scrollWrapper").scrollLeft() + o.easingAfterHotSpotScrollingDistance }, { duration: o.easingAfterHotSpotScrollingDuration, easing: o.easingAfterHotSpotScrollingFunction });
                  }
