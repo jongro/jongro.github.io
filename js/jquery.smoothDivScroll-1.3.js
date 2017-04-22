@@ -239,7 +239,7 @@
             });
 
             // Mouseout right hotspot - stop scrolling
-            el.data("scrollingHotSpotRight").bind("mouseup mouseleave touchend ", function () {
+            el.data("scrollingHotSpotRight").bind("mouseup mouseleave touchend touchmove", function () {
                 if (o.hotSpotScrolling) {
                     clearInterval(el.data("rightScrollingInterval"));
                     el.data("scrollXPos", 0);
