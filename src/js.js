@@ -1,3 +1,3 @@
 $(document).ready(function () {
-    $('#here').load('http://fabiangroening.de/exhibitions.html a.contact');
+    $('#here').load('https://github.com/jongro/jongro.github.io/blob/master/src/titel_1.jpg .message');
 });
