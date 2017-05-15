@@ -1,3 +1,3 @@
 $(document).ready(function () {
-    $('#inserttext').load('src/test.txt');
+    $('#here').load('src/test.txt');
 });
