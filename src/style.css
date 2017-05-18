@@ -5,9 +5,12 @@ html, body {
     margin-top: 0;
 }
 
+figure {
+    margin: 10px;
+}
+
 figure img {
     height: 400px;
-    margin: 10px;
 }
 
 figure {
