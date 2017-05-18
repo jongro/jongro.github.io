@@ -4,14 +4,17 @@ html, body {
     margin-right: auto;
     margin-top: 0;
 }
+
 figure img {
     height: 400px;
     margin: 10px;
 }
+
 figure {
     display: none;    
     float: left;
 }
+
 #load {
     position: absolute;
     z-index: 9999999;
