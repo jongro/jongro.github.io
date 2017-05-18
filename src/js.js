@@ -31,4 +31,13 @@ $(document).ready(function () {
     $('#titlex1').load('images/2017/01.txt');
     $('#titlex2').load('images/2017/02.txt');
     $('#titlex3').load('images/2017/03.txt');
+    $('#titlex4').load('images/2017/04.txt');
+    $('#titlex5').load('images/2017/05.txt');
+    $('#titlex6').load('images/2017/06.txt');
+    $('#titlex7').load('images/2017/07.txt');
+    $('#titlex8').load('images/2017/08.txt');
+    $('#titlex9').load('images/2017/09.txt');
+    $('#titlex10').load('images/2017/10.txt');
+    $('#titlex11').load('images/2017/11.txt');
+    $('#titlex12').load('images/2017/12.txt');
 });
