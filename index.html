@@ -14,11 +14,11 @@
     
     <div id="images">
         <figure id="fig04">
-            <img id="img04" src="images/2017/04.jpg" onerror="this.style.display='none';" />
+            <img id="img04" src="images/2017/04.jpg" />
             <figcaption id="titlex4"></figcaption>
         </figure>
-        <figure id="fig03">
-            <img id="img03" src="images/2017/03.jpg" alt="" />
+        <figure id="fig03" style="display: none;">
+            <img id="img03" src="images/2017/03.jpg" alt="" onload="this.parentNode.style.display = 'block'"/>
             <figcaption id="titlex3"></figcaption>
         </figure>                       
         <figure id="fig02">
