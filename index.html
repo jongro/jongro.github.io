@@ -14,7 +14,7 @@
     
     <div id="images">
  
-        <figure style="background-color:yellow;width:100px;height:400px;" id="fig04">
+        <figure style="background-color:green;width:100px;height:400px;" id="fig04">
             <img id="img04" src="images/2017/04.jpg" />
             <figcaption id="titlex4"></figcaption>
         </figure> 
@@ -36,11 +36,13 @@
     function myFunction() {
         var x = document.getElementById('fig01');
             x.style.display = 'none';
+    };
 
     document.getElementById("img04").onerror = function() {myFunction()};
     function myFunction() {
         var x = document.getElementById('fig04');
             x.style.display = 'none';
+    };
     </script>
 </body>
 </html>
