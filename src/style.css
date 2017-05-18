@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 body {
     display: flex;
     align-items: center;
     flex-flow: column wrap;
     white-space: nowrap;
+    font-family: 'Open Sans', sans-serif;
+    color: #222222;
+    font-size: 8pt;
 }
 
 figure {
