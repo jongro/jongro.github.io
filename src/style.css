@@ -3,6 +3,7 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
+    display: table;
 }
 
 figure {
@@ -23,10 +24,9 @@ figure {
     margin-right: auto;
 }
 
-#load img{
+#load {
     position: absolute;
     z-index: 9999999;
     margin-top: 310px;
-    margin-left: auto;
-    margin-right: auto;
+    display: table-cell;
 }
