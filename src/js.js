@@ -6,20 +6,6 @@
 //    $("figure").fadeToggle(0);
 //});
 
-$(document).ready(function () {
-document.getElementById("img01").onerror = function() {myFunction()};
-function myFunction() {
-    var x = document.getElementById('fig01');
-        x.style.display = 'none';
-});
-    
-$(document).ready(function () {
-document.getElementById("img04").onerror = function() {myFunction()};
-function myFunction() {
-    var x = document.getElementById('fig04');
-        x.style.display = 'none';
-});
-
 
 //$(document).ready(function () {
 //    $.get('images/2017/2017.txt', function (data) {
