@@ -13,12 +13,12 @@ function myFunction() {
         x.style.display = 'none';
 });
     
-//$(document).ready(function () {
-//document.getElementById("img04").onerror = function() {myFunction()};
-//function myFunction() {
-//    var x = document.getElementById('fig04');
-//        x.style.display = 'none';
-//});
+$(document).ready(function () {
+document.getElementById("img04").onerror = function() {myFunction()};
+function myFunction() {
+    var x = document.getElementById('fig04');
+        x.style.display = 'none';
+});
 
 
 //$(document).ready(function () {
