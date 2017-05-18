@@ -17,9 +17,11 @@ figure img {
 figure {
     display: none;    
     float: left;
+    display: inline-flex;
+
 }
 #images {
-    display: inline-flex;
+    display: table-cell;
     margin-left: auto;
     margin-right: auto;
 }
