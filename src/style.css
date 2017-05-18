@@ -4,6 +4,7 @@ html, body {
     margin-right: auto;
     margin-top: 0;
     text-align: center;
+    display: inline-flex;
 }
 
 figure img {
