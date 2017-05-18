@@ -1,10 +1,10 @@
-$(window).on('load', function () {
-    $("#load").fadeToggle(0);
-});
+//$(window).on('load', function () {
+//    $("#load").fadeToggle(0);
+//});
 
-$(window).on('load', function () {
-    $("figure").fadeToggle(0);
-});
+//$(window).on('load', function () {
+//    $("figure").fadeToggle(0);
+//});
 
 $(document).ready(function () {
 document.getElementById("img01").onerror = function() {myFunction()};
@@ -13,12 +13,12 @@ function myFunction() {
         x.style.display = 'none';
 });
     
-$(document).ready(function () {
-document.getElementById("img04").onerror = function() {myFunction()};
-function myFunction() {
-    var x = document.getElementById('fig04');
-        x.style.display = 'none';
-});
+//$(document).ready(function () {
+//document.getElementById("img04").onerror = function() {myFunction()};
+//function myFunction() {
+//    var x = document.getElementById('fig04');
+//        x.style.display = 'none';
+//});
 
 
 //$(document).ready(function () {
