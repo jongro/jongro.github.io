@@ -1,4 +1,10 @@
+$(window).on('load', function () {
+    $("#load").fadeToggle(0);
+});
 
+$(window).on('load', function () {
+    $(".figure").fadeToggle(0);
+});
 
 $(document).ready(function () {
     $.get('images/2017/2017.txt', function (data) {
