@@ -3,8 +3,6 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    text-align: center;
-    display: inline-flex;
 }
 
 figure img {
@@ -16,9 +14,16 @@ figure {
     display: none;    
     float: left;
 }
+#images {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #load {
     position: absolute;
     z-index: 9999999;
     margin-top: 310px;
+    margin-left: auto;
+    margin-right: auto;
 }
