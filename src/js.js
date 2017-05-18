@@ -8,30 +8,13 @@ $(window).on('load', function () {
 
 
 
-$(document).ready(function () {
-    
-    
-    document.getElementById("img01").onerror = function() {myFunction()};
-    function myFunction() {
-        var x = document.getElementById('fig01');
-            x.style.display = 'block';
-    };
-    document.getElementById("img02").onerror = function() {myFunction()};
-    function myFunction() {
-        var x = document.getElementById('fig02');
-            x.style.display = 'block';
-    };
-    document.getElementById("img03").onerror = function() {myFunction()};
-    function myFunction() {
-        var x = document.getElementById('fig03');
-            x.style.display = 'block';
-    };
-    document.getElementById("img04").onerror = function() {myFunction()};
-    function myFunction() {
-        var x = document.getElementById('fig04');
-            x.style.display = 'block';
-    };
-});
+//$(document).ready(function () {
+//    document.getElementById("img04").onerror = function() {myFunction()};
+//    function myFunction() {
+//        var x = document.getElementById('fig04');
+//            x.style.display = 'block';
+//    };
+//});
 
 //$(document).ready(function () {
 //    $.get('images/2017/2017.txt', function (data) {
