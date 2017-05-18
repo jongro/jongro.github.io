@@ -7,7 +7,10 @@ $(window).on('load', function () {
 });
 
 
+
 $(document).ready(function () {
+    
+    
     document.getElementById("img01").onerror = function() {myFunction()};
     function myFunction() {
         var x = document.getElementById('fig01');
