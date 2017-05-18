@@ -20,7 +20,7 @@ figure {
     margin-right: auto;
 }
 
-#load {
+#load img{
     position: absolute;
     z-index: 9999999;
     margin-top: 310px;
