@@ -40,7 +40,7 @@ $(document).ready(function () {
     var k = 7;   
     var text = new Array(k);
     for (var i = 1; i <=k; i++)
-        text[i-1] = '<div>' + i + '</div>';
+        text[i-1] = '<figure><img src=' + '"' + 'images/2017/0' + i + '.jpg' + '"' + 'alt=' + '""  onload=' + '"this.parentNode.style.display = ' + '"block"' + '" /></figure>'
     $('#test').html(text); 
     
 });    
