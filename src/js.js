@@ -34,6 +34,6 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    for (var i = 1; i <=12; i++)
-        $('#test').html(i) 
+    for (var i = 1; i <=3; i++)
+        $("'#test"+i"'").html(i) 
 });
