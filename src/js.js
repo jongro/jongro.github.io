@@ -37,6 +37,6 @@ $(document).ready(function () {
     var k = 6;
     var text = new Array(k);
     for (var i = 1; i <=k; i++)
-        text[i-1] = i;
+        text[i-1] = "<div>" + i + "</div>";
     $('#test').html(text); 
 });
