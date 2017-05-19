@@ -40,7 +40,7 @@ $(document).ready(function () {
     var k = 3;   
     var text = new Array(k);
     for (var i = 1; i <=k; i++)
-        text[i-1] = '<figure style="display:block;opacity=1"><img src="images/2017/01.jpg" /></figure>'
+        text[i-1] = '<img src="images/2017/01.jpg" />'
     $('#test').html(text); 
     
 });    
