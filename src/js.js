@@ -27,9 +27,7 @@ $(window).on('load', function () {
 //    });
 //});
 
-$(document).ready(function () {
-    $('#test').html("testtest");
-});
+
 
 
 $(document).ready(function () {
