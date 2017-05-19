@@ -28,14 +28,7 @@ $(window).on('load', function () {
 //});
 
 $(document).ready(function () {
-    $('#test').html(
-    
-    "<figure id='fig12'>
-            <img id='img12' src="images/2017/12.jpg" alt='' onload='this.parentNode.style.display = 'block'' />
-            <figcaption id='titlex12'></figcaption>
-    </figure>"
-        
-    );
+    $('#test').html("testtest");
 });
 
 
