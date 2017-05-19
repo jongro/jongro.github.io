@@ -27,13 +27,13 @@ $(window).on('load', function () {
 //    });
 //});
 
-
-$(document).ready(function (k=12) {
+k = 6;
+$(document).ready(function (k) {
     for (var i = 1; i <=k; i++)
         $('#titlex'+i).load('images/2017/0'+i+'.txt');
 });
 
-$(document).ready(function (k=5) {
+$(document).ready(function (k) {
     var text = new Array(k);
     for (var i = 1; i <=k; i++)
         text[i-1] = i;
