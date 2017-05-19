@@ -27,11 +27,6 @@ $(window).on('load', function () {
 //    });
 //});
 
-    var Ausgabe = "";
-      for (var i = 10; i <= 36; i++)
-        Ausgabe = Ausgabe + '<span style="font-size:' + i + 'px">Schrift mit ' +
-          i + ' Pixel Gr&ouml;&szlig;e<\/span><br>';
-    document.write(Ausgabe);
 
 $(document).ready(function () {
     for (var i = 1; i <=12; i++)
