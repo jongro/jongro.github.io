@@ -28,15 +28,15 @@ $(window).on('load', function () {
 //});
 
 $(document).ready(function () {
+    
+    var text = new Array(k);
+    for (var i = 1; i <=k; i++)
+        text[i-1] = "<div>" + i + "</div>";
+    $('#test').html(text); 
+    
+    
     var k = 6;
     for (var i = 1; i <=k; i++)
         $('#titlex'+i).load('images/2017/0'+i+'.txt');
 });
 
-$(document).ready(function () {
-    var k = 6;
-    var text = new Array(k);
-    for (var i = 1; i <=k; i++)
-        text[i-1] = "<div>" + i + "</div>";
-    $('#test').html(text); 
-});
