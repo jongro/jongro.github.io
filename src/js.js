@@ -40,7 +40,7 @@ $(document).ready(function () {
     var k = 7;   
     var text = new Array(k);
     for (var i = 1; i <=k; i++)
-        text[k-i] = '<figure><img src="images/2017/0' + i + '.jpg" alt="" onload="this.parentNode.style.display = "block"" /><figcaption id="title' + i + '"></figcaption></figure>'
+        text[k-i] = '<figure style="display:block;"><img src="images/2017/0' + i + '.jpg" alt="" /><figcaption id="title' + i + '"></figcaption></figure>'
     $('#images').html(text); 
     
 });    
