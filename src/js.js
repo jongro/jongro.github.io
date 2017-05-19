@@ -40,7 +40,7 @@ $(document).ready(function () {
     var k = 3;   
     var text = new Array(k);
     for (var i = 1; i <=k; i++)
-        text[i-1] = '<figure style="display:block;"><img src="images/2017/01.jpg" /></figure>'
+        text[i-1] = '<figure style="display:block;"><img src="images/2017/01.jpg" /><figcaption id="title"></figcaption></figure>'
     $('#images').html(text); 
     
 });    
@@ -49,7 +49,7 @@ $(document).ready(function () {
  $(document).ready(function () {
     var k = 3;     
     for (var i = 1; i <=k; i++)
-        $('#titlex'+i).load('images/2017/0'+i+'.txt');
+        $('#title'+i).load('images/2017/0'+i+'.txt');
     
     
 });
