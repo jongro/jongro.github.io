@@ -41,10 +41,7 @@ $(document).ready(function () {
     var text = new Array(k);
     for (var i = 1; i <=k; i++)
         text[i-1] =   
-        "<figure id=" + "'" + "fig" + i + "'" + 
-            "<img id=" + "'" + "img" + i + "'" + "src=" + "'" + "images/2017/" + i + "'" + "alt=" + "'" + "'" + "onload=" + "'" + "this.parentNode.style.display =" + "'" + "block" + "'" + "'" + "/>" + 
-            "figcaption id=" + "'" + "titlex" + i + "'" + "></figcaption>" +
-        "</figure>";
+        "<figure id=" + "'" + "fig" + i + "'" + "<img id=" + "'" + "img" + i + "'" + "src=" + "'" + "images/2017/" + i + "'" + "alt=" + "'" + "'" + "onload=" + "'" + "this.parentNode.style.display =" + "'" + "block" + "'" + "'" + "/>" + "figcaption id=" + "'" + "titlex" + i + "'" + "></figcaption>" + "</figure>";
     $('#test').html(text); 
     
     
