@@ -37,17 +37,17 @@ $(window).on('load', function () {
 
 
 $(document).ready(function () {
-    var k = 7;   
+    var k = 3;   
     var text = new Array(k);
     for (var i = 1; i <=k; i++)
-        text[i-1] = '<img style="display:block;" src="images/2017/01.jpg" />'
+        text[i-1] = '<figure><img style="display:block;" src="images/2017/01.jpg" /><figcaption id="titlex1"></figcaption></figure>'
     $('#test').html(text); 
     
 });    
     
 
  $(document).ready(function () {
-    var k = 7;     
+    var k = 3;     
     for (var i = 1; i <=k; i++)
         $('#titlex'+i).load('images/2017/0'+i+'.txt');
     
