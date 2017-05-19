@@ -28,9 +28,12 @@ $(window).on('load', function () {
 //});
 
 
-
+$(document).ready(function () {
+    for (var i = 1; i <=12; i++)
+        $('#titlex'+i).load('images/2017/0'+i+'.txt');
+});
 
 $(document).ready(function () {
     for (var i = 1; i <=12; i++)
-    $('#titlex'+i).load('images/2017/0'+i+'.txt');
+        $('#test').html(i) 
 });
