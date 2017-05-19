@@ -34,6 +34,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    var text = ['1', '2', '3'];
-    $('#test').html(text[1]); 
+    for (var i = 1; i <=3; i++)
+        var text[i-1] = i;    
+    $('#test').html(text); 
 });
