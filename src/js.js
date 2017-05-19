@@ -35,5 +35,5 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     var text = ['1', '2', '3'];
-    $('#test').html(text); 
+    $('#test').html(text[1]); 
 });
