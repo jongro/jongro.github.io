@@ -43,7 +43,7 @@ $(document).ready(function () {
         text[i-1] =   
         "<figure id=" + "'" + "fig" + i + "'" + 
             "<img id=" + "'" + "img" + i + "'" + "src=" + "'" + "images/2017/" + i + "'" + "alt=" + "'" + "'" + "onload=" + "'" + "this.parentNode.style.display =" + "'" + "block" + "'" + "'" + "/>" + 
-            "figcaption id=" + "'" + "titlex" + i + "'" + "></figcaption> +
+            "figcaption id=" + "'" + "titlex" + i + "'" + "></figcaption>" +
         "</figure>";
     $('#test').html(text); 
     
