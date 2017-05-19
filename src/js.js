@@ -27,11 +27,24 @@ $(window).on('load', function () {
 //    });
 //});
 
+
+
+
+//        <figure id="fig12">
+//            <img id="img12" src="images/2017/12.jpg" alt="" onload="this.parentNode.style.display = 'block'" />
+//            <figcaption id="titlex12"></figcaption>
+//        </figure>
+
+
 $(document).ready(function () {
     var k = 7;   
     var text = new Array(k);
     for (var i = 1; i <=k; i++)
-        text[i-1] = "<div>" + i + "</div>";
+        text[i-1] =   
+        "<figure id=" + "'" + "fig" + i + "'" + 
+            "<img id=" + "'" + "img" + i + "'" + "src=" + "'" + "images/2017/" + i + "'" + "alt=" + "'" + "'" + "onload=" + "'" + "this.parentNode.style.display =" + "'" + "block" + "'" + "'" + "/>" + 
+            "figcaption id=" + "'" + "titlex" + i + "'" + "></figcaption> +
+        "</figure>";
     $('#test').html(text); 
     
     
