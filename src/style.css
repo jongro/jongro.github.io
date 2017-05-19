@@ -12,6 +12,7 @@ body {
 
 figure {
     display: none;
+    opacity: 0;
     margin: 10px;
 }
 
