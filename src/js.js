@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     var text = '';
-    for (var i = 1; i <=3; i++)    
+    for (var i = 1; i <=4; i++)    
         text[i] = i;
     $('#test').html(text); 
 });
