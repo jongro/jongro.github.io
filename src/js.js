@@ -28,14 +28,14 @@ $(window).on('load', function () {
 //});
 
 
-$(document).ready(function (k=24) {
+$(document).ready(function (k=12) {
     for (var i = 1; i <=k; i++)
         $('#titlex'+i).load('images/2017/0'+i+'.txt');
 });
 
-$(document).ready(function () {
-    var text = new Array(4);
-    for (var i = 1; i <=4; i++)
+$(document).ready(function (k=5) {
+    var text = new Array(k);
+    for (var i = 1; i <=k; i++)
         text[i-1] = i;
     $('#test').html(text); 
 });
