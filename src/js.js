@@ -16,11 +16,13 @@ $(document).ready(function () {
 });    
 
 $(document).ready(function () {
+    $('#images').ready(function () {
     var k = 7;   
     for (var i = 1; i <=k; i++)
      var img = document.getElementById('image0' + i);
      img.onload = function () { 
      $("#title0' + i + '").load("images/2017/0' + i + '.txt"); $("#figure0' + i + '").css({ display: "block" });
+     });
 });
     
 
