@@ -40,10 +40,17 @@ $(document).ready(function () {
     var k = 7;   
     var text = new Array(k);
     for (var i = 1; i <=k; i++)
-        text[k-i] = '<figure><img src="images/2017/0' + i + '.jpg" onload="this.parentNode.style.display = "block"" /><figcaption id="title' + i + '"></figcaption></figure>'
+        text[k-i] = '<figure><img src="images/2017/0' + i + '.jpg" onload="myfunction()" /><figcaption id="title' + i + '"></figcaption></figure>'
     $('#images').html(text); 
     
+    function myfunction() {
+    var x = document.getElementById('img0' + i);
+        x.this.parentNode.style.display = 'block';
+    };
+    
 });    
+
+
 
 
  $(document).ready(function () {
