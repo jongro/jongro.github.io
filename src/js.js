@@ -46,7 +46,7 @@ $(document).ready(function () {
     document.getElementById('img0' + i).onload = function() {myFunction()};
     function myFunction () {
         var x = document.getElementById('img0' + i);
-            x.parentNode.style.display = 'none';
+            x.parentNode.style.display = 'block';
     };
     
     
