@@ -11,18 +11,16 @@ body {
 }
 
 figure {
-    display: none;
+
     opacity: 0;
     margin: 10px;
+    float: left;
 }
 
 figure img {
     height: 400px;
 }
 
-figure {
-    float: left;
-}
 #images {
     display: inline-flex;
     margin-left: auto;
