@@ -3,7 +3,7 @@ $(window).on('load', function () {
 });
 
 $(window).on('load', function () {
-    $("figure").css({ opacity: 1 });
+    $("figure").css({ visibility: 'none' });
 });
 
 
