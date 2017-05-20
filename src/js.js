@@ -7,15 +7,6 @@ $(window).on('load', function () {
 });
 
 
-
-//$(document).ready(function () {
-//    document.getElementById("img04").onerror = function() {myFunction()};
-//    function myFunction() {
-//        var x = document.getElementById('fig04');
-//            x.style.display = 'block';
-//    };
-//});
-
 //$(document).ready(function () {
 //    $.get('images/2017/2017.txt', function (data) {
 //        var title1 = data.split("\n")[1].split("\t")[1];
@@ -25,33 +16,7 @@ $(window).on('load', function () {
 //        $('#title2').html(title2);
 //        $('#title3').html(title3);
 //    });
-//});
-
-
-
-
-//        <figure id="fig12">
-//            <img id="img12" src="images/2017/12.jpg" alt="" onload="this.parentNode.style.display = 'block'" />
-//            <figcaption id="titlex12"></figcaption>
-//        </figure>
-
-
-$(document).ready(function () {
-    var k = 7;   
-    var text = new Array(k);
-    for (var i = 1; i <=k; i++)
-        text[k-i] = '<figure><img id="img0' + i + '" src="images/2017/0' + i + '.jpg" alt="" /><figcaption id="title' + i + '"></figcaption></figure>'
-    $('#images').html(text);     
-    
-    document.getElementById('img0' + i).onload = function() {myFunction()};
-    function myFunction () {
-        var x = document.getElementById('img0' + i);
-            x.parentNode.style.display = 'block';
-    };
-    
-    
-});    
-
+//})
 
  $(document).ready(function () {
     var k = 7;     
