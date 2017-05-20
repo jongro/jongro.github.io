@@ -6,3 +6,11 @@ $(window).on('load', function () {
     $("figure").css({ opacity: 1 });
 });
 
+
+$(document).ready(function(k) {
+    
+
+    
+    
+    
+});
