@@ -12,7 +12,7 @@ body {
 
 figure {
     display: none;
-    visibility: none;
+    visibility: hidden;
     margin: 10px;
     float: left;
 }
