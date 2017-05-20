@@ -15,8 +15,8 @@ $(document).ready(function () {
     $('#images').html(text);
 });    
 
-$(document).ready(function () {
-    $('#images').on('load', function () {
+$(window).on('load', function () {
+    $('#images').ready(function () {
     var k = 7;   
     for (var i = 1; i <=k; i++)
      var img = document.getElementById('image0' + i);
