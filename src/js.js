@@ -7,13 +7,22 @@ $(window).on('load', function () {
 });
 
 
-$(window).on('load', function () {
+$(document).ready(function () {
     var k = 7;   
     var text = new Array(k);
     for (var i = 1; i <=k; i++)
-        text[k-i] = '<figure id="figure0' + i + '"><img id="image0' + i + '" src="images/2017/0' + i + '.jpg" alt="" onload="$("#title0' + i + '").load("images/2017/0' + i + '.txt"); $("#figure0' + i + '").css({ display: "block" });" /><figcaption id="title0' + i + '"></figcaption></figure>'
+        text[k-i] = '<figure id="figure0' + i + '"><img id="image0' + i + '" src="images/2017/0' + i + '.jpg" alt="" /><figcaption id="title0' + i + '"></figcaption></figure>'
     $('#images').html(text);
 });    
+
+$(document).ready(function () {
+    var k = 7;   
+    for (var i = 1; i <=k; i++)
+     var img = document.getElementById('image0' + i);
+     img.onload = function () { 
+     $("#title0' + i + '").load("images/2017/0' + i + '.txt"); $("#figure0' + i + '").css({ display: "block" });
+});
+    
 
 //        <figure id="figure12">
 //            <img id="image12" src="images/2017/12.jpg" alt="" onload="$('#title12').load('images/2017/12.txt'); $('#figure12').css({ display: 'block' });" />
