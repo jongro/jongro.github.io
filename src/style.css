@@ -10,11 +10,6 @@ html, body {
     background-color: lightgray;
 }
 
-.foxyform {
-    font-size: 14pt;
-    
-}
-
 body {
     overflow-y: scroll;
     display: flex;
