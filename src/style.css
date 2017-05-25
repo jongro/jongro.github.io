@@ -149,17 +149,16 @@ figure:hover {
   }
 }
 
-@media (pointer: fine) {
-  figcaption {
+/*figcaption {
     display: block;
     padding: 0px 0px 6px 0px;
     font-size: 8pt;
     opacity: 0;
     visibility: hidden;
     background-color: firebrick;
-  }
+}
 
-  figure:hover figcaption {
+figure:hover figcaption {
     opacity: 1;
     visibility: visible;
     opacity: 1;
@@ -168,8 +167,7 @@ figure:hover {
     -o-transition: all 0.3s;
     transition: all 0.3s;
     font-size: 8pt;
-  }
-}
+}*/
 
 .cv1 {
     position: absolute;
