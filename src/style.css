@@ -47,6 +47,10 @@ header nav {
     background-color: yellow;
 }
 
+header nav a {
+    font-size: 24pt;
+}
+
 #active {
     color: #00c;
 }
