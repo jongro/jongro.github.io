@@ -33,14 +33,14 @@ a:visited {
 header {
     margin-top: 30px;
     display: inline-block;
-    font-size: 32px;
+    font-size: 24pt;
     font-weight: 700;
     background-color: red;
 }
 
 header nav {
     display: inline-block;
-    font-size: 32px;
+    font-size: 24pt;
     margin-left: 10px;
     word-spacing: 10px;
     font-weight: 700;
