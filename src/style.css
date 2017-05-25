@@ -139,7 +139,7 @@ figure:hover {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-
+@media (hover: hover) {
 figcaption {
     display: block;
     padding: 0px 0px 6px 0px;
@@ -157,6 +157,7 @@ figure:hover figcaption {
     -o-transition: all 0.3s;
     transition: all 0.3s;
     font-size: 8pt;
+}
 }
 
 .cv1 {
