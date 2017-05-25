@@ -51,13 +51,8 @@ header nav {
 
 #load {
     position: absolute;
-    z-index: 9999999;
+    z-index: 99;
     margin-top: 320px;
-}
-
-#load img {
-    width: 32px;
-    height: 32px;
 }
 
 main {
@@ -73,6 +68,8 @@ main {
 #images {
     visibility: hidden;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 #texts {
@@ -85,7 +82,35 @@ main {
     visibility: hidden;
 }
 
-img {
+#imagescontainer {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 40px;
+    right: 40px;
+    overflow-y: hidden;
+}
+
+#buttonleft {
+    visibility: hidden;
+    left: 0px;
+    padding: 20px 20px 20px 5px;
+    position: absolute;
+    margin-top: 300px;
+    z-index: 98;
+}
+
+#buttonright {
+    visibility: hidden;
+    right: 0px;
+    padding: 20px 5px 20px 20px;
+    position: absolute;
+    margin-top: 300px;
+    z-index: 98;
+}
+
+main img {
     height: 400px;
 }
 
@@ -98,7 +123,7 @@ figure {
     background-color: pink;
 }
 
-    figure:hover {
+figure:hover {
     padding: 11px 11px 0px 11px;
     outline: 1px solid #999999;
     -moz-transition: all 0.3s;
@@ -198,7 +223,7 @@ body.lb-disable-scrolling {
     line-height: 0;
 }
 
-    .lightbox .lb-image {
+.lightbox .lb-image {
         display: block;
         height: auto;
         max-width: inherit;
@@ -214,7 +239,7 @@ body.lb-disable-scrolling {
     border-bottom: 27px solid white;
 }
 
-    .lb-outerContainer:after {
+.lb-outerContainer:after {
         content: "";
         display: table;
         clear: both;
@@ -245,14 +270,14 @@ body.lb-disable-scrolling {
 
 .lb-nav a.lb-prev {
     width: 34%;
-    margin-left: -80px;
+    margin-left: -70px;
     float: left;
     background: url(img/prev.png) left 48% no-repeat;
 }
 
 .lb-nav a.lb-next {
     width: 64%;
-    margin-right: -80px;
+    margin-right: -70px;
     float: right;
     background: url(img/next.png) right 48% no-repeat;
 }
@@ -263,7 +288,7 @@ body.lb-disable-scrolling {
     width: 100%;
 }
 
-    .lb-dataContainer:after {
+.lb-dataContainer:after {
         content: "";
         display: table;
         clear: both;
