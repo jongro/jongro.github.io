@@ -14,7 +14,7 @@
 
 <body>
 
-    <header>
+    <div>
         <a id="active" href="index.html">FABIAN GRÖNING</a>
 
             <a href="2017.html">2017</a>
@@ -24,7 +24,7 @@
             <a href="cv.html">CV</a>
             <a href="exhibitions.html">EXHIBITIONS</a>
         <nav></nav>
-    </header>
+    </div>
 
     <main id="frontpage">
         <figure id="figure01"><a id="link01" href="images/frontpage/frontpage.jpg" data-lightbox="0"><img id="image01" src="images/frontpage/frontpage.jpg" alt="" onload="$.ajax({ url: 'images/frontpage/frontpage.txt', type: 'get', dataType: 'text', async: false, success: function (title01) { $('#title01').html(title01); $('#link01').attr('data-title', title01) }}); $('#figure01').css({ display: 'inline-flex' });" /><figcaption id="title01"></figcaption></a></figure>
