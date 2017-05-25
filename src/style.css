@@ -38,7 +38,7 @@ header {
     background-color: red;
 }
 
-header nav {
+header div {
     display: inline-block;
     margin-left: 10px;
     word-spacing: 10px;
