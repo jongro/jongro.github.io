@@ -42,6 +42,7 @@ header nav {
     display: inline-block;
     margin-left: 10px;
     word-spacing: 10px;
+    font-weight: 700;
     background-color: yellow;
 }
 
@@ -57,8 +58,8 @@ header nav {
 
 main {
     margin: 50px 20px 40px 20px;
-    flex: auto;
     background-color: green;
+    flex: none;
 }
 
 #frontpage {
@@ -177,19 +178,27 @@ figure:hover figcaption {
 }
 
 footer {
-    display: inline-block;
+    flex: auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
     width: 929px; /*Breite an header anpassen*/
-    padding-bottom: 9px;
-    text-align: right;
-    font-size: 8pt;
     background-color: Highlight;
 }
 
-footer nav {
-    display: inline-block;
-    font-weight: 700;
-    background-color: aqua;
+footer div {
+    padding-bottom: 8px;
+    font-size: 8pt;
+    display: inline-flex;
+    justify-content: flex-end;
+    background-color: rebeccapurple;
 }
+
+footer nav {
+    font-weight: 700;
+}
+
+
 
 
 

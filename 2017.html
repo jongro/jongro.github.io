@@ -32,7 +32,7 @@
     <div id="buttonright"><img src="src/img/next.png" /></div>
 
     <main id="images">
-        <div id="imagescontainer" >
+        <div id="imagescontainer">
             <figure id="figure01"><a id="link01" href="images/2017/2017_01.jpg"><img id="image01" src="images/2017/2017_01.jpg" alt="" onload="$.ajax({ url: 'images/2017/2017_01.txt', type: 'get', dataType: 'text', async: false, success: function (title01) { $('#title01').html(title01); $('#link01').attr('data-title', title01) } }); $('#link01').attr('data-lightbox', '0'); $('#figure01').css({ display: 'inline-flex' });" /><figcaption id="title01"></figcaption></a></figure>
             <figure id="figure02"><a id="link02" href="images/2017/2017_02.jpg"><img id="image02" src="images/2017/2017_02.jpg" alt="" onload="$.ajax({ url: 'images/2017/2017_02.txt', type: 'get', dataType: 'text', async: false, success: function (title02) { $('#title02').html(title02); $('#link02').attr('data-title', title02) } }); $('#link02').attr('data-lightbox', '0'); $('#figure02').css({ display: 'inline-flex' });" /><figcaption id="title02"></figcaption></a></figure>
             <figure id="figure03"><a id="link03" href="images/2017/2017_03.jpg"><img id="image03" src="images/2017/2017_03.jpg" alt="" onload="$.ajax({ url: 'images/2017/2017_03.txt', type: 'get', dataType: 'text', async: false, success: function (title03) { $('#title03').html(title03); $('#link03').attr('data-title', title03) } }); $('#link03').attr('data-lightbox', '0'); $('#figure03').css({ display: 'inline-flex' });" /><figcaption id="title03"></figcaption></a></figure>
@@ -52,7 +52,7 @@
     </main>
 
     <footer>
-        © 2017 FABIAN GRÖNING | <nav><a href="contact.html">CONTACT</a></nav>
+        <div>© 2017 FABIAN GRÖNING | <nav><a href="contact.html">CONTACT</a></nav></div>
     </footer>
 
 </body>
