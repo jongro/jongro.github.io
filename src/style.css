@@ -41,8 +41,8 @@ header {
 header nav {
     display: inline-block;
     font-size: 24pt !important;
-    margin-left: 10px;
-    word-spacing: 10px;
+    margin-left: 10px !important;
+    word-spacing: 10px !important;
     font-weight: 700;
     background-color: yellow;
 }
