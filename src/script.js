@@ -15,10 +15,10 @@ $(window).on('load', function () {
 
     try {
         document.createEvent('TouchEvent');
-        alwaysShowNav = true;
+        alwShoNav = true;
     } catch (e) { }
 
-    if (alwaysShowNav) {
+    if (alwShoNav) {
         $("figcaption").css({ visibility: 'visible' });
         $("figcaption").css({ opacity: '1' });
     };

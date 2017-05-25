@@ -307,26 +307,30 @@ body.lb-disable-scrolling {
         content: "";
         display: table;
         clear: both;
-    }
+}
 
 .lb-data {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 0);
     opacity: 0.9999;
 }
 
-    .lb-data .lb-details {
+.lb-data .lb-details {
         width: 85%;
         float: left;
         text-align: left;
-    }
+}
 
-    .lb-data .lb-caption {
+.lb-data .lb-caption {
         font-size: 8pt;
         font-family: 'Open Sans', sans-serif;
         color: #222222;
         display: block;
         float: left;
-    }
+}
+
+.lb-number {
+    display: block;
+}
 
 
 /**********LIGHTBOX END**********/
