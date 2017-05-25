@@ -48,7 +48,7 @@ $(window).on("load", function () {
     });
 
     content.ready(function () {
-        if ((content.scrollLeft() + content.width()) == (contentelmt.scrollWidth)) {
+        if ((content.scrollLeft() + content.width()) + 5 >= (contentelmt.scrollWidth)) {
             buttonright.stop(true).animate({
                 opacity: 0
             }, fadetime / 3);
@@ -60,7 +60,7 @@ $(window).on("load", function () {
     });
 
     content.on('scroll', function () {
-        if ((content.scrollLeft() + content.width()) == (contentelmt.scrollWidth)) {
+        if ((content.scrollLeft() + content.width()) + 5 >= (contentelmt.scrollWidth)) {
             buttonright.stop(true).animate({
                 opacity: 0
             }, fadetime / 3);
