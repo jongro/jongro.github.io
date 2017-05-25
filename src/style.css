@@ -29,8 +29,9 @@ a:visited {
     outline: none;
 }
 
-
 header {
+    margin-left: 15px;
+    margin-right: 15px;
     margin-top: 30px;
     float: left;
     display: inline-flex;
@@ -156,6 +157,16 @@ figure:hover figcaption {
     transition: all 0.3s;
     font-size: 8pt;
 }
+
+@media (hover:none) {
+    figcaption {
+        display: block;
+        padding: 0px 0px 6px 0px;
+        font-size: 8pt;
+        background-color: firebrick;
+    }
+}
+
 
 .cv1 {
     position: absolute;
