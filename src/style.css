@@ -36,7 +36,6 @@ header {
     font-size: 24pt;
     font-weight: 700;
     background-color: red;
-    float: left;
 }
 
 header nav {
@@ -46,6 +45,9 @@ header nav {
     word-spacing: 10px;
     font-weight: 700;
     background-color: yellow;
+}
+
+header nav a {
     float: left;
 }
 
