@@ -47,10 +47,6 @@ header nav {
     background-color: yellow;
 }
 
-header nav a {
-    float: left;
-}
-
 #active {
     color: #00c;
 }
