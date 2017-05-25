@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 html, body {
     height: 100%;
@@ -18,20 +18,12 @@ body {
 }
 
 a:link {
-    -webkit-text-size-adjust:none;
-    -ms-text-size-adjust:none;
-    -moz-text-size-adjust:none;
-    text-size-adjust:none;
     color: #222222;
     text-decoration: none;
     outline: none;
 }
 
 a:visited {
-    -webkit-text-size-adjust:none;
-    -ms-text-size-adjust:none;
-    -moz-text-size-adjust:none;
-    text-size-adjust:none;
     color: #222222;
     text-decoration: none;
     outline: none;
