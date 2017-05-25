@@ -21,14 +21,12 @@ a:link {
     color: #222222;
     text-decoration: none;
     outline: none;
-    float: left;
 }
 
 a:visited {
     color: #222222;
     text-decoration: none;
     outline: none;
-    float: left;
 }
 
 
@@ -47,6 +45,7 @@ header nav {
     word-spacing: 10px;
     font-weight: 700;
     background-color: yellow;
+    float: left;
 }
 
 #active {
