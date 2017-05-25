@@ -32,17 +32,17 @@ a:visited {
 
 header {
     margin-top: 30px;
-    display: inline;
+    display: inline-block;
     font-size: 24pt;
     font-weight: 700;
     background-color: red;
 }
 
-header div {
+header nav {
     display: inline-block;
+    font-size: 24pt;
     margin-left: 10px;
     word-spacing: 10px;
-    font-size: 24pt;
     font-weight: 700;
     background-color: yellow;
 }
