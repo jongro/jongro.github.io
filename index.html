@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="src/style.css" rel="stylesheet">
+    <script src="src/jquery.js"></script>
+    <script src="src/script.js"></script>
+    <script src="src/lightbox.js"></script>
+    <link rel="shortcut icon" href="src/img/icon.png" type="image/png" />
+    <title>FABIAN GRÖNING</title>
+    <meta name="description" content="description">
+</head>
+
+<body>
+
+    <header>
+        <a id="active" href="http://fabiangroening.de/">FABIAN GRÖNING</a>
+            <nav>
+                <a href="2017.html">2017</a>
+                <a href="2016.html">2016</a>
+                <a href="2015.html">2015</a>
+                <a href="2014.html">2014</a>
+                <a href="cv.html">CV</a>
+                <a href="exhibitions.html">EXHIBITIONS</a>
+            </nav>
+    </header>
+
+    <main id="frontpage">
+        <figure id="figure01"><a id="link01" href="images/frontpage/frontpage.jpg" data-lightbox="0"><img id="image01" src="images/frontpage/frontpage.jpg" alt="" onload="$.ajax({ url: 'images/frontpage/frontpage.txt', type: 'get', dataType: 'text', async: false, success: function (title01) { $('#title01').html(title01); $('#link01').attr('data-title', title01) }}); $('#figure01').css({ display: 'inline-flex' });" /><figcaption id="title01"></figcaption></a></figure>
+    </main>
+
+    <footer>
+        <div>© 2017 FABIAN GRÖNING | <nav><a href="contact.html">CONTACT</a></nav></div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,335 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    font-family: 'Open Sans';
+    color: #222222;
+    background-color: lightgray;
+}
+
+body {
+    overflow-y: scroll;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+a:link {
+    color: #222222;
+    text-decoration: none;
+    outline: none;
+}
+
+a:visited {
+    color: #222222;
+    text-decoration: none;
+    outline: none;
+}
+
+header {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+    float: left;
+    display: inline-flex;
+    font-size: 24pt;
+    font-weight: 700;
+    background-color: red;
+}
+
+header nav {
+    display: inline-flex;
+    float: left;
+    background-color: yellow;
+}
+
+header nav a {
+    margin-left: 18px;
+    background-color: blueviolet;
+
+}
+
+#active {
+    color: #00c;
+}
+
+#load {
+    position: absolute;
+    z-index: 99;
+    margin-top: 320px;
+}
+
+main {
+    margin: 50px 20px 40px 20px;
+    background-color: green;
+    flex: none;
+}
+
+#frontpage {
+    visibility: hidden;
+}
+
+#images {
+    visibility: hidden;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#texts {
+    width: 929px; /*Breite an header anpassen*/
+    padding-top: 5px;
+    font-size: 14pt;
+}
+
+#contact {
+    visibility: hidden;
+}
+
+#imagescontainer {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 40px;
+    right: 40px;
+    overflow-y: hidden;
+}
+
+#buttonleft {
+    visibility: hidden;
+    left: 0px;
+    padding: 20px 20px 20px 5px;
+    position: absolute;
+    margin-top: 300px;
+    z-index: 98;
+}
+
+#buttonright {
+    visibility: hidden;
+    right: 0px;
+    padding: 20px 5px 20px 20px;
+    position: absolute;
+    margin-top: 300px;
+    z-index: 98;
+}
+
+main img {
+    height: 400px;
+}
+
+figure {
+    display: none;
+    padding: 0;
+    margin: 0 1px;
+    padding: 11px 11px 0px 11px;
+    outline: 1px solid #ffffff;
+    background-color: pink;
+}
+
+figure:hover {
+    padding: 11px 11px 0px 11px;
+    outline: 1px solid #999999;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+figcaption {
+    display: block;
+    padding: 0px 0px 6px 0px;
+    font-size: 8pt;
+    opacity: 0;
+    visibility: hidden;
+    background-color: firebrick;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    visibility: visible;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: 8pt;
+}
+
+.cv1 {
+    position: absolute;
+}
+
+.cv2 {
+    margin-left: 150px;
+    font-weight: 700;
+}
+
+.cv3 {
+    margin-left: 150px;
+}
+
+.ex1 {
+    position: absolute;
+}
+
+.ex2 {
+    margin-left: 101px;
+    font-weight: 700;
+}
+
+.ex3 {
+}
+
+footer {
+    flex: auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 929px; /*Breite an header anpassen*/
+    background-color: Highlight;
+}
+
+footer div {
+    padding-bottom: 8px;
+    font-size: 8pt;
+    display: inline-flex;
+    justify-content: flex-end;
+    background-color: rebeccapurple;
+}
+
+footer nav {
+    font-weight: 700;
+}
+
+
+
+
+
+
+/**********LIGHTBOX START**********/
+body:after {
+    content: url(img/prev.png) url(img/next.png);
+    display: none;
+}
+
+body.lb-disable-scrolling {
+    overflow: hidden;
+}
+
+.lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: black;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    display: none;
+}
+
+.lightbox {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    line-height: 0;
+}
+
+.lightbox .lb-image {
+        display: block;
+        height: auto;
+        max-width: inherit;
+        max-height: none;
+    }
+
+.lb-outerContainer {
+    position: relative;
+    *zoom: 1;
+    margin: 0 auto;
+    background-color: white;
+    border: 11px solid white;
+    border-bottom: 27px solid white;
+}
+
+.lb-outerContainer:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+.lb-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.lb-container > .nav {
+    left: 0;
+}
+
+.lb-nav a {
+    outline: none;
+    background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+
+.lb-prev, .lb-next {
+    height: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+.lb-nav a.lb-prev {
+    width: 34%;
+    margin-left: -70px;
+    float: left;
+    background: url(img/prev.png) left 48% no-repeat;
+}
+
+.lb-nav a.lb-next {
+    width: 64%;
+    margin-right: -70px;
+    float: right;
+    background: url(img/next.png) right 48% no-repeat;
+}
+
+.lb-dataContainer {
+    margin: -14px auto auto auto;
+    *zoom: 1;
+    width: 100%;
+}
+
+.lb-dataContainer:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+.lb-data {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 0);
+    opacity: 0.9999;
+}
+
+    .lb-data .lb-details {
+        width: 85%;
+        float: left;
+        text-align: left;
+    }
+
+    .lb-data .lb-caption {
+        font-size: 8pt;
+        font-family: 'Open Sans', sans-serif;
+        color: #222222;
+        display: block;
+        float: left;
+    }
+
+
+/**********LIGHTBOX END**********/
+
+
+
