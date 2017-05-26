@@ -1,137 +1,43 @@
 ﻿<!DOCTYPE html>
+
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Kontaktformular f&uuml;r die eigene Website - schnell und einfach selbst erstellen - mit Spamschutz und nat&uuml;rlich kostenlos!" />
-    <meta name="keywords" content="TXT_kewy" />
-    <meta name="author" content="Autor" />
-    <script src='//www.google.com/recaptcha/api.js'></script>
-    <style type="text/css">
-        body {
-            zoom: 1;
-            padding: 10px;
-            padding-top: 0;
-            background-color: #ffffff;
-            font-family: Arial, sans-serif;
-            color: #222222;
-            font-size: 12px;
-        }
-
-        p, td {
-            margin: 8px 0 0 0;
-            border: 0px;
-        }
-
-            p.formklein {
-                margin: 5px 0 0 0;
-                font-family: Arial, sans-serif;
-                color: #222222;
-                font-size: 10px;
-            }
-
-        input, textarea {
-            width: 100%;
-        }
-
-        textarea {
-            height: 102px;
-        }
-
-            input.form, input.formsubmit, select.form, option.form, textarea.form, input.captcha {
-                color: #222222;
-                font-size: 12px;
-                border: 1px solid #C8C8C8;
-                padding: 2px;
-                background: #fafafa url(layout/img04.gif) repeat-x;
-                margin: 0px;
-                margin-top: 5px;
-                font-family: Arial, sans-serif;
-            }
-
-                input.form:hover, input.form:focus, select.form:hover, textarea.form:hover, select.form:focus, textarea.form:focus {
-                    border: 1px solid #222222;
-                }
-
-        input.radio {
-            width: auto;
-        }
-
-        option.form {
-            padding: 0px;
-            width: auto;
-            border: 0px;
-        }
-
-        input.formsubmit {
-            width: 115px;
-            margin-left: 3px;
-            cursor: pointer;
-        }
-
-        input.captcha {
-            width: 60px;
-            margin-left: 15px;
-            margin-right: 0px;
-        }
-
-        p.error {
-            background: #ffffff url(layout/delete.png) no-repeat;
-            height: 30px;
-            padding-left: 45px;
-            padding-top: 10px;
-            margin: 10px 10px -5px 10px;
-            color: #ce2c09;
-        }
-
-        span.error2 {
-            color: #ce2c09;
-            background: #ffd4d9 !important;
-        }
-
-        p.success {
-            background: #ffffff url(layout/check.png) no-repeat;
-            height: 30px;
-            padding-left: 45px;
-            padding-top: 10px;
-            margin: 10px 10px -5px 10px;
-            color: #248200;
-        }
-
-        input[type=submit] {
-            margin-top: 0;
-        }
-
-        .highlight {
-            border: 1px solid #ce2c09 !important;
-            background: #ffd4d9 !important;
-        }
-
-        #bottom {
-            text-align: center;
-        }
-    </style>
-    <title>Kontaktformular kostenlos f&uuml;r Ihre Website - Foxyform.de</title>
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-17691221-2']);
-        _gaq.push(['_trackPageview']);
-
-        (function () {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
+    <meta charset="utf-8" />
+    <link href="src/style.css" rel="stylesheet">
+    <script src="src/jquery.js"></script>
+    <script src="src/script.js"></script>
+    <script src="src/lightbox.js"></script>
+    <link rel="shortcut icon" href="src/img/icon.png" type="image/png" />
+    <title>FABIAN GRÖNING</title>
+    <meta name="description" content="description">
 </head>
+
 <body>
-    <div class="form">
-        <form accept-charset="utf-8" action="http://www.foxyform.de/form.php?id=195437&mail=send&sec_hash=89cd093a3b8&PHPSESSID=7596193e37683c4b95b690bca7ac3dde" method="post" style="width: 100%;" novalidate>
-            <input type="hidden" name="32ffbac9282440ab9f3e9882f91648cdda2bdd62" value="701f4d77e3196614a1d45b0a19c597c50f1891f04f112347de9fd662936debd6" /><p class="form">E-Mail: <span style="font-weight: bolder; color: red;">*</span> <br /><input type="email" class="form" name="email" value="" /></p><p class="form">Betreff:  <br /><input type="text" class="form" name="betreff" value="" /></p><p class="form">Nachricht: <span style="font-weight: bolder; color: red;">*</span> <br /><textarea name="nachricht" rows="9" class="form"></textarea></p><div class="g-recaptcha" data-sitekey="6LfgNfoSAAAAABItyuRsaNmRFAs4peXVJxT0_Cag"></div>
-            <div id="bottom">
-                <input type="submit" value="Send" class="formsubmit" />
-                <p class="formklein">Mit <span style="font-weight: bolder; color: red;">*</span> gekennzeichnete Felder m&uuml;ssen ausgef&uuml;llt werden.</p>
-            </div>
-        </form>
-    </div>
+
+    <header>
+        <a id="active" href="http://fabiangroening.de/">FABIAN GRÖNING</a>
+            <nav>
+                <a href="2017.html">2017</a>
+                <a href="2016.html">2016</a>
+                <a href="2015.html">2015</a>
+                <a href="2014.html">2014</a>
+                <a href="cv.html">CV</a>
+                <a href="exhibitions.html">EXHIBITIONS</a>
+            </nav>
+    </header>
+
+    <main id="frontpage">
+
+            <embed src="http://www.foxyform.de/form.php?id=195437&sec_hash=89cd093a3b8" width="400" height="490" />
+
+
+
+
+    </main>
+
+    <footer>
+        <div>© 2017 FABIAN GRÖNING | <nav><a href="contact.html">CONTACT</a></nav></div>
+    </footer>
+
 </body>
 </html>
