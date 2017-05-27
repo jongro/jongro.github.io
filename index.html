@@ -27,7 +27,7 @@
     </header>
 
     <main id="front">
-        <figure id="figure01"><a id="link01" href="images/front/front.jpg" data-lightbox="0"><img id="image01" src="images/front/front.jpg" alt="" onload="$.ajax({ url: 'images/front/front.txt', type: 'get', dataType: 'text', async: false, success: function (title01) { $('#title01')(title01); $('#link01').attr('data-title', title01) }}); $('#figure01').css({ display: 'inline-flex' });" /><figcaption id="title01"></figcaption></a></figure>
+        <figure id="figure01"><a id="link01" href="images/front/front.jpg" data-lightbox="0"><img id="image01" src="images/front/front.jpg" alt="" onload="$.ajax({ url: 'images/front/front.txt', type: 'get', dataType: 'text', async: false, success: function (title01) { $('#title01').html(title01); $('#link01').attr('data-title', title01) }}); $('#figure01').css({ display: 'inline-flex' });" /><figcaption id="title01"></figcaption></a></figure>
     </main>
 
     <footer>
