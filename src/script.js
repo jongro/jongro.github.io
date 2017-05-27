@@ -1,7 +1,7 @@
 
 $(window).on('load', function () {
         $("#load").fadeToggle(0);
-        $("#frontpage").css({ visibility: 'visible' });
+        $("#front").css({ visibility: 'visible' });
         $("#images").css({ visibility: 'visible' });
         $("#contact").css({ visibility: 'visible' });
         $("#buttonleft").css({ visibility: 'visible' });

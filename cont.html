@@ -1,26 +1,110 @@
 ﻿<html>
 <head>
+
+    <script src="src/jquery.js"></script>
+
+
 <style>
-input[type=email] {color:red;}
-textarea[name=message] {color:blue;}
-input[type=submit] {color:green; background-color: white; border:none;}
-input:active[type=submit] {color:white; background-color: black; border:none;}
+
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+    input[type=email] {
+        display: block;
+        width: 260px;
+        margin: 0 0 30px 0;
+        padding: 2px 4px;
+        border: 1px solid #999999;
+        font-family: 'Open Sans';
+        font-size: 10pt;
+        color: #222222;
+    }
+
+    input[type=email]:focus {
+        border: 1px solid #222222;
+    }
+
+    input[name=_subject] {
+        display: block;
+        width: 360px;
+        margin: 0 0 30px 0;
+        padding: 2px 4px;
+        border: 1px solid #999999;
+        font-family: 'Open Sans';
+        font-size: 10pt;
+        color: #222222;
+    }
+
+    input[name=_subject]:focus {
+        border: 1px solid #222222;
+    }
+
+    textarea[name=message] {
+        display: block;
+        width: 360px;
+        height: 220px;
+        resize: none;
+        margin: 0 0 30px 0;
+        padding: 2px 4px;
+        border: 1px solid #999999;
+        font-family: 'Open Sans';
+        font-size: 10pt;
+        color: #222222;
+    }
+
+    textarea[name=message]:focus {
+        border: 1px solid #222222;
+    }
+
+    input[type=submit] {
+        display: block;
+        width: 80px;
+        height: 40px;
+        margin: 15px 0 0 0;
+        border: 1px solid #222222;
+        font-family: 'Open Sans';
+        font-size: 11pt;
+        font-weight: 700;
+        color: white;
+        background-color: #222222;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    input:focus[type=submit] {
+        color: #222222;
+        background-color: white;
+    }
+
+    p {
+        margin: 0 0 6px 0;
+        font-family: 'Open Sans';
+        font-size: 11pt;
+        font-weight: 700;
+        line-height: 1;
+        color: #222222;
+    }
 
 </style>
 </head>
 <body>
 
 
-<form id="contactform" method="POST">
-    <input type="email" name="_replyto" placeholder="Your email">
-    <textarea name="message" placeholder="Your message"></textarea>
-    <input type="submit" value="Send">
-    <input type="text" name="_gotcha" style="display:none" />
-</form>
-<script>
-    var contactform =  document.getElementById('contactform');
-    contactform.setAttribute('action', '//formspree.io/' + 'jonasg' + '@' + 'live' + '.' + 'de');
-</script>
+    <form id="contactform" method="POST">
+        <p>E-MAIL</p>
+        <input type="email" name="_replyto" placeholder="YOUR EMAIL">
+        <p>SUBJECT</p>
+        <input type="text" name="_subject" placeholder="YOUR SUBJECT" />
+        <p>MESSAGE</p>
+        <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+        <input type="submit" value="SEND">
+        <input type="text" name="_gotcha" style="display:none" />
+    </form>
+    <script>
+        var contactform =  document.getElementById('contactform');
+        contactform.setAttribute('action', '//formspree.io/' + 'jonasg' + '@' + 'live' + '.' + 'de');
+    </script>
+
+
 	
 </body>
 </html>

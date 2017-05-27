@@ -69,7 +69,7 @@ main {
     flex: none;
 }
 
-#frontpage {
+#front {
     visibility: hidden;
 }
 
@@ -88,6 +88,7 @@ main {
 
 #contact {
     visibility: hidden;
+    display: inline-flex;
 }
 
 #imagescontainer {
@@ -182,6 +183,89 @@ figure:hover figcaption {
 }
 
 .ex3 {
+}
+
+input[type=email] {
+    display: block;
+    width: 260px;
+    margin: 0 0 20px 0;
+    padding: 2px 4px;
+    border: 1px solid #999999;
+    font-family: 'Open Sans';
+    font-size: 10pt;
+    color: #222222;
+}
+
+input[type=email]:focus {
+    border: 1px solid #222222;
+}
+
+input[name=_subject] {
+    display: block;
+    width: 360px;
+    margin: 0 0 20px 0;
+    padding: 2px 4px;
+    border: 1px solid #999999;
+    font-family: 'Open Sans';
+    font-size: 10pt;
+    color: #222222;
+}
+
+input[name=_subject]:focus {
+    border: 1px solid #222222;
+}
+
+textarea[name=message] {
+    display: block;
+    width: 360px;
+    height: 189px;
+    resize: none;
+    margin: 0 0 20px 0;
+    padding: 2px 4px;
+    border: 1px solid #999999;
+    font-family: 'Open Sans';
+    font-size: 10pt;
+    color: #222222;
+}
+
+textarea[name=message]:focus {
+    border: 1px solid #222222;
+}
+
+input[type=submit] {
+    display: block;
+    width: 70px;
+    height: 35px;
+    margin: 15px 0 0 0;
+    border: 1px solid #222222;
+    font-family: 'Open Sans';
+    font-size: 11pt;
+    font-weight: 700;
+    color: white;
+    background-color: #222222;
+    text-align: center;
+    vertical-align: middle;
+}
+
+input:focus[type=submit] {
+    color: #222222;
+    background-color: white;
+}
+
+p {
+    margin: 0 0 6px 0;
+    font-family: 'Open Sans';
+    font-size: 11pt;
+    font-weight: 700;
+    line-height: 1;
+    color: #222222;
+}
+
+#sent {
+    width: 370px;
+    margin-top:150px;
+    text-align: center;
+    font-weight: 400;
 }
 
 footer {
