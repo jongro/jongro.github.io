@@ -82,12 +82,13 @@ main {
 
 #texts {
     width: 929px; /*Breite an header anpassen*/
-    padding-top: 5px;
+    padding-top: 6px;
     font-size: 14pt;
 }
 
 #contact {
     visibility: hidden;
+    padding-top: 10px;
     display: inline-flex;
 }
 
