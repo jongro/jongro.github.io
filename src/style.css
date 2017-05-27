@@ -76,6 +76,9 @@ main {
 #images {
     visibility: hidden;
     width: 100%;
+    min-width: 960px; /*Breite an header anpassen + 31px*/
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     overflow: hidden;
 }
@@ -104,22 +107,20 @@ main {
 
 #buttonleft {
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0px;
+    left: 0;
     padding: 175px 20px 175px 0px;
-    position: absolute;
     margin-top: 137px;
     z-index: 98;
 }
 
 #buttonright {
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 0px;
+    right: 0;
     padding: 175px 0px 175px 20px;
-    position: absolute;
     margin-top: 137px;
     z-index: 98;
 }
