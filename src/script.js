@@ -25,6 +25,9 @@ $(window).on('load', function () {
     } catch (e) { }
 
     if (alwShoNav) {
+        $("#buttonleft").css({ position: 'absolute' });
+        $("#buttonright").css({ position: 'absolute' });
+
         $("figcaption").css({ visibility: 'visible' });
         $("figcaption").css({ opacity: '1' });
     };
