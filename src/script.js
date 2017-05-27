@@ -12,10 +12,13 @@ $(window).on('load', function () {
         }, 0);
 });
 
-//$(window).scroll(function () {
- //   $('#buttonleft').css('top', '-' + $(window).scrollTop() + 'px');
- //   $('#buttonright').css('top', '-' + $(window).scrollTop() + 'px');
-//});
+$(window).on('load resize', function () {
+    if ($(window).width() < 960)  {
+        $("#buttonright").css({ left: '905px' });
+    } else {
+        $("#buttonright").css({ left: 'auto' });
+    }
+});
 
 $(window).on('load', function () {
 

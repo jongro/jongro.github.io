@@ -122,11 +122,11 @@ main {
     z-index: 98;
 }
 
-@media (max-width: 977px) { /*Breite an header anpassen + 68px*/
+/* @media (max-width: 977px) { wird mit js festgelegt
     #buttonright {
-        left: 905px; /*Breite an header anpassen - 4px*/
+        left: 905px; Breite an header anpassen - 24px
     }
-}
+}*/
 
 main img {
     height: 400px;
