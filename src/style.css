@@ -104,7 +104,7 @@ main {
 
 #buttonleft {
     visibility: hidden;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     padding: 175px 20px 175px 0px;
@@ -114,12 +114,18 @@ main {
 
 #buttonright {
     visibility: hidden;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     padding: 175px 0px 175px 20px;
     margin-top: 137px;
     z-index: 98;
+}
+
+@media (max-width: 997px) {
+    #buttonright {
+        left: 925px;
+    }
 }
 
 main img {
