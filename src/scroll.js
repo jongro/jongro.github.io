@@ -6,7 +6,7 @@ $(window).on("load", function () {
     //navcontrols = $('.nav-controls');
     var containerelmt = $('#images')[0];
     var contentelmt = $('#imagescontainer')[0];
-    var content1elmt = $('#imagescontainer figure')[0];
+    var content1elmt = $('#figure01')[0];
     var fadetime = 600;
     var scrollTimer;
     var $document = $(document);
@@ -15,7 +15,7 @@ $(window).on("load", function () {
 
     //hide scrollbar------------------------------------------------------------
     $document.ready(function () {
-        containerelmt.style.height = content1elmt.offsetHeight + 5 + "px";
+        containerelmt.style.height = content1elmt.offsetHeight + 2 + "px";
     });
 
     $document.ready(function () {
@@ -107,15 +107,15 @@ $(window).on("load", function () {
         var scrollArgs = {
             scrollLeft: (content.scrollLeft() + (scrollOffset * scrollDir))
         };
-        content.animate(scrollArgs, 50);
+        content.animate(scrollArgs, 1);
     };
 
     function scrollLeft() {
-        scrollContent(-1);
+        scrollContent(-0.8);
     };
 
     function scrollRight() {
-        scrollContent(1);
+        scrollContent(0.8);
     };
 
     function scrollStop() {
@@ -123,11 +123,11 @@ $(window).on("load", function () {
     };
 
     $("#buttonleft").on("mousedown", function () {
-        scrollTimer = setInterval(scrollLeft, 60);
+        scrollTimer = setInterval(scrollLeft, 29);
     }).on("mouseup mouseout", scrollStop);
 
     $("#buttonright").on("mousedown", function () {
-        scrollTimer = setInterval(scrollRight, 60);
+        scrollTimer = setInterval(scrollRight, 29);
     }).on("mouseup mouseout", scrollStop);
 });
 
