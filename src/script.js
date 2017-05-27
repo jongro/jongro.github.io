@@ -1,5 +1,6 @@
 
 $(window).on('load', function () {
+        $('body').on('dragstart', function (event) { event.preventDefault(); });
         $("#load").fadeToggle(0);
         $("#front").css({ visibility: 'visible' });
         $("#images").css({ visibility: 'visible' });

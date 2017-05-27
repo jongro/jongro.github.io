@@ -103,6 +103,8 @@ main {
 
 #buttonleft {
     visibility: hidden;
+    position: absolute;
+    top: 0;
     left: 0px;
     padding: 175px 20px 175px 0px;
     position: absolute;
@@ -112,6 +114,8 @@ main {
 
 #buttonright {
     visibility: hidden;
+    position: absolute;
+    top: 0;
     right: 0px;
     padding: 175px 0px 175px 20px;
     position: absolute;
@@ -187,9 +191,11 @@ figure:hover figcaption {
 
 input[type=email] {
     display: block;
+    box-sizing: border-box;
     width: 260px;
-    margin: 0 0 20px 0;
-    padding: 2px 4px;
+    height: 25px;
+    margin: 0 0 23px 0;
+    padding: 2px 4px 2px 4px;
     border: 1px solid #999999;
     font-family: 'Open Sans';
     font-size: 10pt;
@@ -202,9 +208,11 @@ input[type=email]:focus {
 
 input[name=_subject] {
     display: block;
+    box-sizing: border-box;
     width: 360px;
-    margin: 0 0 20px 0;
-    padding: 2px 4px;
+    height: 25px;
+    margin: 0 0 23px 0;
+    padding: 2px 4px 2px 4px;
     border: 1px solid #999999;
     font-family: 'Open Sans';
     font-size: 10pt;
@@ -217,11 +225,12 @@ input[name=_subject]:focus {
 
 textarea[name=message] {
     display: block;
+    box-sizing: border-box;
     width: 360px;
-    height: 189px;
+    height: 188px;
     resize: none;
-    margin: 0 0 20px 0;
-    padding: 2px 4px;
+    margin: 0 0 23px 0;
+    padding: 2px 4px 2px 4px;
     border: 1px solid #999999;
     font-family: 'Open Sans';
     font-size: 10pt;
@@ -234,9 +243,11 @@ textarea[name=message]:focus {
 
 input[type=submit] {
     display: block;
+    box-sizing: border-box;
     width: 70px;
     height: 35px;
     margin: 15px 0 0 0;
+    padding: 0;
     border: 1px solid #222222;
     font-family: 'Open Sans';
     font-size: 11pt;
@@ -252,12 +263,12 @@ input:active[type=submit] {
     background-color: white;
 }
 
-p {
+p { padding:0;
     margin: 0 0 6px 0;
     font-family: 'Open Sans';
     font-size: 11pt;
     font-weight: 700;
-    line-height: 1;
+    line-height: 14px;
     color: #222222;
 }
 
