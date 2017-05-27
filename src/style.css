@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-flow: column;
     align-items: center;
-    min-width: 960px; /*Breite anpassen*/
+    min-width: 960px; /*Breite an header anpassen + 31px*/
 }
 
 a:link {
@@ -122,9 +122,9 @@ main {
     z-index: 98;
 }
 
-@media (max-width: 997px) {
+@media (max-width: 977px) { /*Breite an header anpassen + 68px*/
     #buttonright {
-        left: 925px;
+        left: 905px; /*Breite an header anpassen - 4px*/
     }
 }
 
