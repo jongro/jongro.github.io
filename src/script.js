@@ -13,7 +13,7 @@ $(window).on('load', function () {
 });
 
 $(window).on('load resize', function () {
-    if ($(window).width() < 960)  {
+    if ($(window).width() < 960)  {                 // an Breite von body anpassen
         $("#buttonright").css({ left: '905px' });
     } else {
         $("#buttonright").css({ left: 'auto' });

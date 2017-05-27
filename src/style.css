@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-flow: column;
     align-items: center;
-    min-width: 960px; /*Breite an header anpassen + 31px*/
+    min-width: 990px; /*Breite an header anpassen (+ ..px)*/
 }
 
 a:link {
@@ -121,12 +121,6 @@ main {
     margin-top: 137px;
     z-index: 98;
 }
-
-/* @media (max-width: 977px) { wird mit js festgelegt
-    #buttonright {
-        left: 905px; Breite an header anpassen - 24px
-    }
-}*/
 
 main img {
     height: 400px;
