@@ -247,7 +247,7 @@ input[type=submit] {
     vertical-align: middle;
 }
 
-input:focus[type=submit] {
+input:active[type=submit] {
     color: #222222;
     background-color: white;
 }
