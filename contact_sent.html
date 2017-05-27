@@ -12,6 +12,8 @@
 
 <body>
 
+    <noscript><div id="noscript">This site requires JavaScript. Please enable JavaScript in your Browser.</div></noscript>
+
     <header>
         <a href="/">FABIAN GRÖNING</a>
         <nav>
@@ -23,9 +25,9 @@
             <a href="exhibitions">EXHIBITIONS</a>
         </nav>
     </header>
-        
+
     <main id="contact">
-        <img style="margin-top:2px;margin-right:40px;" src="/images/contact/contact.jpg" />
+        <img src="/images/contact/contact.jpg" alt="" onload="$('#contact img').css({ display: 'block' });" />
         <p id="sent">YOUR MESSAGE HAS BEEN SENT SUCCESSFULLY</p>
         <script>
             var contactform = document.getElementById('contactform');

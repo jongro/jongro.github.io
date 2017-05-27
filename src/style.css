@@ -188,6 +188,17 @@ figure:hover figcaption {
 .ex3 {
 }
 
+#contact img {
+    display: none;
+    margin-top: 2px;
+    margin-right:40px;
+}
+
+form {
+    padding: 0;
+    margin: 0;
+}
+
 input[type=email] {
     display: block;
     box-sizing: border-box;
@@ -272,7 +283,7 @@ p { padding:0;
 }
 
 #sent {
-    width: 370px;
+    width: 360px;
     margin-top:150px;
     text-align: center;
     font-weight: 400;
@@ -299,6 +310,18 @@ footer nav {
     font-weight: 700;
 }
 
+#noscript {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    font-size: 11pt;
+    text-align: center;
+    padding-top: 160px;
+    z-index: 99999;
+}
 
 
 

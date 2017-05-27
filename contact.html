@@ -12,6 +12,8 @@
 
 <body>
 
+    <noscript><div id="noscript">This site requires JavaScript. Please enable JavaScript in your Browser.</div></noscript>
+
     <header>
         <a href="/">FABIAN GRÖNING</a>
         <nav>
@@ -23,10 +25,10 @@
             <a href="exhibitions">EXHIBITIONS</a>
         </nav>
     </header>
-        
+
     <main id="contact">
-        <img style="margin-top:2px;margin-right:40px;" src="/images/contact/contact.jpg" />
-        <form style="padding:0;margin:0;" id="contactform" method="POST">
+        <img src="/images/contact/contact.jpg" alt="" onload="$('#contact img').css({ display: 'block' });" />
+        <form id="contactform" method="POST">
             <p>E-MAIL</p>
             <input type="email" name="_replyto" placeholder="YOUR EMAIL">
             <p>SUBJECT</p>
