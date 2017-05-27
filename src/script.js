@@ -13,8 +13,16 @@ $(window).on('load', function () {
 });
 
 $(window).scroll(function () {
-    $('#buttonleft').css('top', '-' + $(window).scrollTop() + 'px');
-    $('#buttonright').css('top', '-' + $(window).scrollTop() + 'px');
+    try {
+        document.createEvent('TouchEvent');
+        alwShoNav = false;
+    } catch (e) { }
+
+    if (alwShoNav) { } else {
+
+        $('#buttonleft').css('top', '-' + $(window).scrollTop() + 'px');
+        $('#buttonright').css('top', '-' + $(window).scrollTop() + 'px');
+    }
 });
 
 $(window).on('load', function () {
