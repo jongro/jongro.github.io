@@ -17,21 +17,21 @@
     <header>
         <a id="active" href="http://fabiangroening.de/">FABIAN GRÖNING</a>
             <nav>
-                <a href="2017.html">2017</a>
-                <a href="2016.html">2016</a>
-                <a href="2015.html">2015</a>
-                <a href="2014.html">2014</a>
-                <a href="cv.html">CV</a>
-                <a href="exhibitions.html">EXHIBITIONS</a>
+                <a href="2017">2017</a>
+                <a href="2016">2016</a>
+                <a href="2015">2015</a>
+                <a href="2014">2014</a>
+                <a href="cv">CV</a>
+                <a href="exhibitions">EXHIBITIONS</a>
             </nav>
     </header>
 
     <main id="front">
-        <figure id="figure01"><a id="link01" href="images/front/front.jpg" data-lightbox="0"><img id="image01" src="images/front/front.jpg" alt="" onload="$.ajax({ url: 'images/front/front.txt', type: 'get', dataType: 'text', async: false, success: function (title01) { $('#title01').html(title01); $('#link01').attr('data-title', title01) }}); $('#figure01').css({ display: 'inline-flex' });" /><figcaption id="title01"></figcaption></a></figure>
+        <figure id="figure01"><a id="link01" href="images/front/front.jpg" data-lightbox="0"><img id="image01" src="images/front/front.jpg" alt="" onload="$.ajax({ url: 'images/front/front.txt', type: 'get', dataType: 'text', async: false, success: function (title01) { $('#title01')(title01); $('#link01').attr('data-title', title01) }}); $('#figure01').css({ display: 'inline-flex' });" /><figcaption id="title01"></figcaption></a></figure>
     </main>
 
     <footer>
-        <div>© 2017 FABIAN GRÖNING | <nav><a href="contact.html">CONTACT</a></nav></div>
+        <div>© 2017 FABIAN GRÖNING | <nav><a href="contact">CONTACT</a></nav></div>
     </footer>
 
 </body>
