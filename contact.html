@@ -30,11 +30,11 @@
         <img src="/images/contact/contact.jpg" alt="" onload="$('#contact img').css({ display: 'block' });" />
         <form id="contactform" method="POST">
             <p>E-MAIL</p>
-            <input type="email" name="_replyto" placeholder="YOUR EMAIL">
+            <input type="email" name="_replyto" placeholder="YOUR EMAIL" required>
             <p>SUBJECT</p>
             <input type="text" name="_subject" placeholder="YOUR SUBJECT" />
             <p>MESSAGE</p>
-            <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+            <textarea name="message" placeholder="YOUR MESSAGE" required></textarea>
             <input type="submit" value="SEND">
             <input type="text" name="_gotcha" style="display:none" />
             <input type="hidden" name="_next" value="https://jongro.github.io/contact_sent" />

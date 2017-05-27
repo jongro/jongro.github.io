@@ -199,6 +199,23 @@ form {
     margin: 0;
 }
 
+::-webkit-input-placeholder {
+    color: #888888;
+    opacity: 1;
+}
+::-moz-placeholder {
+    color: #888888;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #888888;
+    opacity: 1;
+}
+input:-moz-placeholder {
+    color: #888888;
+    opacity: 1;
+}
+
 input[type=email] {
     display: block;
     box-sizing: border-box;
