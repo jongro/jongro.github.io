@@ -12,6 +12,11 @@ $(window).on('load', function () {
         }, 0);
 });
 
+$(window).scroll(function () {
+    $('#buttonleft').css('top', '-' + $(window).scrollTop() + 'px');
+    $('#buttonright').css('top', '-' + $(window).scrollTop() + 'px');
+});
+
 $(window).on('load', function () {
 
     try {
@@ -25,12 +30,6 @@ $(window).on('load', function () {
     };
 
 });
-   
-
-
-
-
-
 
 $(window).on('load resize', function () {
     lightbox.option({
@@ -41,5 +40,3 @@ $(window).on('load resize', function () {
         'fadeDuration': 800,
     });
 });
-
-
