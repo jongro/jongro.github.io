@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-flow: column;
     align-items: center;
-    min-width: 990px; /*Breite an header anpassen (+ ..px)*/
+    min-width: 960px; /*Breite an header anpassen (+ ..px)*/
 }
 
 a:link {
