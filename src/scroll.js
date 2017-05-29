@@ -16,11 +16,15 @@ $(window).on("load", function () {
     //hide scrollbar------------------------------------------------------------
     $document.ready(function () {
         containerelmt.style.height = content1elmt.offsetHeight + 2 + "px";
+        contentelmt.style.bottom = contentelmt.clientHeight - contentelmt.offsetHeight - 5 + "px";
+
     });
 
-    $document.ready(function () {
+    $(window).on('resize', function () {
+        containerelmt.style.height = content1elmt.offsetHeight + 2 + "px";
         contentelmt.style.bottom = contentelmt.clientHeight - contentelmt.offsetHeight - 5 + "px";
     });
+
 
 
     //hover controls-----------------------------------------------------------
@@ -48,7 +52,7 @@ $(window).on("load", function () {
     });
 
     content.ready(function () {
-        if ((content.scrollLeft() + content.width()) + 5 >= (contentelmt.scrollWidth)) {
+        if ((content.scrollLeft() + $(window).width()) >= (contentelmt.scrollWidth)) {
             buttonright.stop(true).animate({
                 opacity: 0
             }, fadetime / 3);
@@ -60,7 +64,19 @@ $(window).on("load", function () {
     });
 
     content.on('scroll', function () {
-        if ((content.scrollLeft() + content.width()) + 5 >= (contentelmt.scrollWidth)) {
+        if ((content.scrollLeft() + $(window).width()) >= (contentelmt.scrollWidth)) {
+            buttonright.stop(true).animate({
+                opacity: 0
+            }, fadetime / 3);
+        } else {
+            buttonright.animate({
+                opacity: 1
+            }, fadetime);
+        }
+    });
+
+    $(window).on('resize', function () {
+        if ((content.scrollLeft() + $(window).width()) >= (contentelmt.scrollWidth)) {
             buttonright.stop(true).animate({
                 opacity: 0
             }, fadetime / 3);
@@ -77,7 +93,7 @@ $(window).on("load", function () {
     });
 
     content.ready(function () {
-        if ((content.scrollLeft()) !== 0) {
+        if ((content.scrollLeft()) > 0) {
             buttonleft.animate({
                 opacity: 1
             }, fadetime);
@@ -89,7 +105,19 @@ $(window).on("load", function () {
     });
 
     content.on('scroll', function () {
-        if ((content.scrollLeft()) !== 0) {
+        if ((content.scrollLeft()) > 0) {
+            buttonleft.animate({
+                opacity: 1
+            }, fadetime);
+        } else {
+            buttonleft.stop(true).animate({
+                opacity: 0
+            }, fadetime / 3);
+        }
+    });
+
+    $(window).on('resize', function () {
+        if ((content.scrollLeft()) > 0) {
             buttonleft.animate({
                 opacity: 1
             }, fadetime);

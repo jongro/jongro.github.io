@@ -1,5 +1,6 @@
 
 $(window).on('load', function () {
+    // Inhalte anzeigen wenn geladen
         $('body').on('dragstart', function (event) { event.preventDefault(); });
         $("#load").fadeToggle(0);
         $("#front").css({ visibility: 'visible' });
@@ -12,16 +13,26 @@ $(window).on('load', function () {
         }, 0);
 });
 
+
+
 $(window).on('load resize', function () {
-    if ($(window).width() < 960)  {                 // an Breite von body anpassen
+    // Anpassen der Breite von #images -> zentriert
+    var width = 0;
+    $('#images figure').filter(function () { return $(this).css('display') !== 'none'; }).each(function () {
+        width += $(this).outerWidth(true) + 4;
+        $('#images').css('width', width + 38 + 'px');
+    });
+
+    if ($(window).width() < 960) {                 // an Breite von body anpassen
         $("#buttonright").css({ left: '905px' });
     } else {
         $("#buttonright").css({ left: 'auto' });
-    }
+    };
 });
 
-$(window).on('load', function () {
 
+$(window).on('load', function () {
+    // Bildunterschriften werden bei Touchgeräten immer angezeit
     try {
         document.createEvent('TouchEvent');
         alwShoNav = true;
@@ -33,6 +44,7 @@ $(window).on('load', function () {
     };
 
 });
+
 
 $(window).on('load resize', function () {
     lightbox.option({
