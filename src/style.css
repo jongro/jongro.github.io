@@ -8,7 +8,6 @@ html, body {
     white-space: nowrap;
     font-family: 'Open Sans';
     color: #222222;
-    background-color: lightgray;
 }
 
 body {
@@ -33,23 +32,20 @@ a:visited {
 
 header {
     flex: none;
-    margin-top: 30px;
+    margin-top: 40px;
     float: left;
     display: inline-flex;
     font-size: 24pt;
     font-weight: 700;
-    background-color: red;
 }
 
 header nav {
     display: inline-flex;
     float: left;
-    background-color: yellow;
 }
 
 header nav a {
     margin-left: 18px;
-    background-color: blueviolet;
 
 }
 
@@ -60,12 +56,11 @@ header nav a {
 #load {
     position: absolute;
     z-index: 99;
-    margin-top: 320px;
+    margin-top: 330px;
 }
 
 main {
     margin: 50px 20px 40px 20px;
-    background-color: green;
     flex: none;
 }
 
@@ -100,7 +95,6 @@ main {
     left: 20px;
     right: 20px;
     overflow-y: hidden;
-    background-color: aquamarine;
 }
 
 #buttonleft {
@@ -109,7 +103,7 @@ main {
     top: 0;
     left: 0;
     padding: 175px 20px 175px 0px;
-    margin-top: 137px;
+    margin-top: 147px;
     z-index: 98;
 }
 
@@ -119,7 +113,7 @@ main {
     top: 0;
     right: 0;
     padding: 175px 0px 175px 20px;
-    margin-top: 137px;
+    margin-top: 147px;
     z-index: 98;
 }
 
@@ -133,7 +127,6 @@ figure {
     margin: 1px;
     padding: 11px 11px 0px 11px;
     outline: 1px solid #ffffff;
-    background-color: pink;
 }
 
 figure:hover {
@@ -151,7 +144,6 @@ figcaption {
     font-size: 8pt;
     opacity: 0;
     visibility: hidden;
-    background-color: firebrick;
 }
 
 figure:hover figcaption {
@@ -313,7 +305,6 @@ footer {
     justify-content: flex-end;
     flex-direction: column;
     width: 929px; /*Breite an header anpassen*/
-    background-color: Highlight;
 }
 
 footer div {
@@ -321,7 +312,6 @@ footer div {
     font-size: 8pt;
     display: inline-flex;
     justify-content: flex-end;
-    background-color: rebeccapurple;
 }
 
 footer nav {

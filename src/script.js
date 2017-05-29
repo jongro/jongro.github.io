@@ -16,11 +16,27 @@ $(window).on('load', function () {
 
 
 $(window).on('load resize', function () {
-    // Anpassen der Breite von #images -> zentriert
+        // Anpassen der Breite von #images -> zentriert
+        var width = 0;
+        $('#images figure').filter(function () { return $(this).css('display') !== 'none'; }).each(function () {
+            width += $(this).outerWidth(true) + 4;
+            $('#images').css('width', width + 38 + 'px');
+        });
+
+        if ($(window).width() < 960) {                 // an Breite von body anpassen
+            $("#buttonright").css({ left: '905px' });
+        } else {
+            $("#buttonright").css({ left: 'auto' });
+        };
+});
+
+$(document).ready(function () {
+    // Anpassen der Breite von #images -> zentriert (IE)
     var width = 0;
     $('#images figure').filter(function () { return $(this).css('display') !== 'none'; }).each(function () {
         width += $(this).outerWidth(true) + 4;
         $('#images').css('width', width + 38 + 'px');
+
     });
 
     if ($(window).width() < 960) {                 // an Breite von body anpassen
@@ -32,7 +48,7 @@ $(window).on('load resize', function () {
 
 
 $(window).on('load', function () {
-    // Bildunterschriften werden bei Touchgeräten immer angezeit
+    // Bildunterschriften werden bei Touchgeräten immer angezeigt
     try {
         document.createEvent('TouchEvent');
         alwShoNav = true;
