@@ -76,9 +76,7 @@ aside nav a {
 }
 
 aside #nav2 a {
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 8px;
 }
 
 section {
@@ -90,6 +88,7 @@ section {
 #load {
     position: absolute;
     min-width: 960px; /*Breite an body anpassen*/
+    margin-left: 181px; /*Rand an aside + anpassen*/
     top: 310px;
     left: 0;
     bottom: 0;
@@ -98,7 +97,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
 }
 
 main #front {
