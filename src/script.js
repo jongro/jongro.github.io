@@ -13,9 +13,19 @@ $(window).on('load', function () {
 
 $(window).on('load resize', function () {
     if ($(window).width() < 960) {                 // an Breite von body anpassen
-        $("#buttonright").css({ left: '905px' });
-    } else {
-        $("#buttonright").css({ left: 'auto' });
+        $("#buttonright").css({ left: '885px' });
+        $("#buttonleft").css({ left: '210px' });
+    }
+    else {
+        if ($(window).width() > 1100) {                // an Breite von body anpassen
+            $("#buttonright").css({ left: $(window).width() / 2 + 475 + 'px' });
+            $("#buttonleft").css({ left: $(window).width() / 2 - 340 + 'px' });
+        }
+        else {
+            $("#buttonright").css({ left: 'auto' });
+            $("#buttonleft").css({ left: '210px' });
+
+        }
     }
 });
 

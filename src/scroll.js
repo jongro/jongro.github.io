@@ -1,5 +1,5 @@
 $(window).on("load", function () {
-    var $window = $(window),
+    var $window = $(window);
     buttonright = $('#buttonright');
     buttonleft = $('#buttonleft');
     content = $('#imagescontainer');
@@ -52,7 +52,7 @@ $(window).on("load", function () {
     });
 
     content.ready(function () {
-        if ((content.scrollLeft() + $(window).width()) >= (contentelmt.scrollWidth)) {
+        if ((content.scrollLeft() + $('body').width() - $('aside').outerWidth(true)) >= (contentelmt.scrollWidth)) {
             buttonright.stop(true).animate({
                 opacity: 0
             }, fadetime / 3);
@@ -64,7 +64,7 @@ $(window).on("load", function () {
     });
 
     content.on('scroll', function () {
-        if ((content.scrollLeft() + $(window).width()) >= (contentelmt.scrollWidth)) {
+        if ((content.scrollLeft() + $('body').width() - $('aside').outerWidth(true)) >= (contentelmt.scrollWidth)) {
             buttonright.stop(true).animate({
                 opacity: 0
             }, fadetime / 3);
@@ -76,7 +76,7 @@ $(window).on("load", function () {
     });
 
     $(window).on('resize', function () {
-        if ((content.scrollLeft() + $(window).width()) >= (contentelmt.scrollWidth)) {
+        if ((content.scrollLeft() + $('body').width() - $('aside').outerWidth(true)) >= (contentelmt.scrollWidth)) {
             buttonright.stop(true).animate({
                 opacity: 0
             }, fadetime / 3);
