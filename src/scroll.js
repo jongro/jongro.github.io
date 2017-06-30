@@ -1,6 +1,6 @@
 $(window).on("load", function () {
     var $window = $(window),
-    buttonright = $('#buttonright');
+        buttonright = $('#buttonright');
     buttonleft = $('#buttonleft');
     content = $('#imagescontainer');
     //navcontrols = $('.nav-controls');

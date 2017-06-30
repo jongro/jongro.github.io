@@ -39,8 +39,9 @@ header {
 }
 
 nav {
+    display: inline-flex;
     float: left;
-    margin-left: 6px;
+    margin-left: 4px;
 }
 
     nav a {
@@ -48,13 +49,12 @@ nav {
     }
 
     nav div {
-        display: inline-flex;
-        margin-left: 6px;
+        margin-left: 10px;
     }
 
         nav div div {
             display: block;
-            margin-top: 25px;
+            margin-top: 2px;
             margin-left: 0px;
             position: absolute;
             line-height: 14pt;
@@ -69,7 +69,7 @@ nav {
 #load {
     position: absolute;
     z-index: 99;
-    margin-top: 330px;
+    margin-top: 300px;
 }
 
 main {
