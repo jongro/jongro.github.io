@@ -4,11 +4,15 @@ $(window).on('load', function () {
     $('body').on('dragstart', function (event) { event.preventDefault(); });
     $("#load").fadeToggle(0);
     $("#front").css({ visibility: 'visible' });
+    $("#images").css({ visibility: 'visible' });
     $("#buttonleft").css({ visibility: 'visible' });
     $("#buttonright").css({ visibility: 'visible' });
+    setTimeout(function () {
+        $('#imagescontainer').css({ visibility: 'visible' });
+    }, 0);
 });
 
-$(window).on('load resize', function () {
+$(window).on('load resize mouseenter', function () {
     // Anpassen der Breite von #images -> zentriert
     var width = 0;
     $('#images figure').filter(function () { return $(this).css('display') !== 'none'; }).each(function () {
@@ -21,10 +25,6 @@ $(window).on('load resize', function () {
     } else {
         $("#buttonright").css({ left: 'auto' });
     };
-    setTimeout(function () {
-        $("#images").css({ visibility: 'visible' });
-        $('#imagescontainer').css({ visibility: 'visible' });
-    }, 0);
 });
 
 $(document).ready(function () {
