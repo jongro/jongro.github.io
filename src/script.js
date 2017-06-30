@@ -27,7 +27,7 @@ $(window).on('load resize', function () {
     };
 });
 
-$('#images').ready(function () {
+$(document).ready(function () {
     // Anpassen der Breite von #images -> zentriert (IE)
     var width = 0;
     $('#images figure').filter(function () { return $(this).css('display') !== 'none'; }).each(function () {
