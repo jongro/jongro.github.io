@@ -83,7 +83,7 @@ main {
 
 #images {
     visibility: hidden;
-    max-width: 100%;
+    width: 100%;
     position: relative;
     overflow: hidden;
 }
