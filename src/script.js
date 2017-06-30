@@ -12,7 +12,7 @@ $(window).on('load', function () {
     }, 0);
 });
 
-$(window).on('load resize mouseenter', function () {
+$(window).on('load resize', function () {
     // Anpassen der Breite von #images -> zentriert
     var width = 0;
     $('#images figure').filter(function () { return $(this).css('display') !== 'none'; }).each(function () {
