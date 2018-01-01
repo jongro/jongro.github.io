@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="src/style.css" rel="stylesheet">
+    <script src="src/jquery.js"></script>
+    <script src="src/script.js"></script>
+    <link rel="shortcut icon" href="src/img/icon.png" type="image/png" />
+    <title>FABIAN GRÖNING | CONTACT</title>
+    <meta name="robots" content="noindex" />
+</head>
+
+<body>
+
+    <noscript><div id="noscript">This site requires JavaScript. Please enable JavaScript in your Browser.</div></noscript>
+
+    <header>
+        <a href="/">FABIAN GRÖNING</a>
+        <nav>
+            <a href="painting">PAINTING</a>
+            <a href="cv">CV</a>
+            <a href="exhibitions">EXHIBITIONS</a>
+        </nav>
+    </header>
+
+    <main id="contact">
+        <img src="/images/!contact/contact.jpg" alt="" onload="$('#contact img').css({ display: 'block' });" />
+        <form id="contactform" method="POST">
+            <p>E-MAIL</p>
+            <input type="email" name="_replyto" placeholder="YOUR EMAIL" required>
+            <p>SUBJECT</p>
+            <input type="text" name="_subject" placeholder="YOUR SUBJECT" />
+            <p>MESSAGE</p>
+            <textarea name="message" placeholder="YOUR MESSAGE" required></textarea>
+            <input type="submit" value="SEND">
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_next" value="http://fabiangroening.de/contact_sent" />
+        </form>
+        <script>
+            var contactform = document.getElementById('contactform');
+            contactform.setAttribute('action', '//formspree.io/' + 'fabiangroening' + '@' + 'gmail' + '.' + 'com');
+        </script>
+    </main>
+
+    <footer>
+        <div>© 2018 FABIAN GRÖNING |&nbsp;<nav><a id="active" href="contact">CONTACT</a></nav></div>
+    </footer>
+
+</body>
+</html>
