@@ -41,7 +41,6 @@ main {
 
 article {
 	margin: auto 7px;
-	white-space: nowrap;
 }
 
 h1 {
@@ -58,11 +57,12 @@ p {
 }
 
 .cv2 {
-    margin-left: 150px;
+	margin-left: 150px;
+	display: block;
 }
 
 .cv3 {
-    font-weight: 300;
+	font-weight: 300;
 }
 
 figure div {
@@ -240,13 +240,12 @@ p {
 
 body, html { 
 	font-size: 100%; 
-	padding: 0 30px; 
-	margin: 0;
+	padding: 0; 
+	margin: 0 30px 0 30px;
 	height: -moz-calc(100% - 162px);
 	height: -webkit-calc(100% - 162px);
 	height: -o-calc(100% - 162px);
 	height: calc(100% - 162px);
-	min-width: 800px;
 }
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -307,6 +306,7 @@ figure {
 	100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
 }
 
+
 @media screen and (max-width: 500px) {
 	html, body {
 		min-width: 100px;
@@ -319,9 +319,6 @@ figure {
 		font-size: 24px;
 		float: inherit;
 		margin-top: 10px;
-	}
-	article {
-		white-space: normal;
 	}
 	.cv1 {
 		position: relative;
