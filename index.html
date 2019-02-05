@@ -1,38 +1,40 @@
-﻿<!DOCTYPE html>
-
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <link href="src/style.css" rel="stylesheet">
-    <script src="src/jquery.js"></script>
-    <script src="src/script.js"></script>
-    <script src="src/lightbox.js"></script>
-    <link rel="shortcut icon" href="src/img/icon.png" type="image/png" />
-    <title>FABIAN GRÖNING</title>
-    <meta name="description" content="FABIAN GRÖNING | Official Website">
-    <meta name="robots" content="index" />
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" type="text/css" href="src/style.css" />
+		<script src="src/modernizr.custom.js"></script>
+		<script src="src/lightbox-plus-jquery.min.js"></script>
+		<script src="src/masonry.pkgd.min.js"></script>
+		<script src="src/javascript.js"></script>
+		<link rel="shortcut icon" href="src/img/icon.png" type="image/png" />
+		<meta name="description" content="MANON JACOB | Official Website">
+		<meta name="robots" content="index" />
+		<title>MANON JACOB</title>
+	</head>
 
-<body>
-   
-    <noscript><div id="noscript">This site requires JavaScript. Please enable JavaScript in your Browser.</div></noscript>
+	<body class = "container">
+			<header>
+				<a id="active" href="/">MANON JACOB</a>
+				<nav><a href="information">Information</a></nav>
+			</header>
 
-    <header>
-        <a id="active" href="/">FABIAN GRÖNING</a>
-            <nav>
-                <a href="painting">PAINTING</a>
-                <a href="cv">CV</a>
-                <a href="exhibitions">EXHIBITIONS</a>
-            </nav>
-    </header>
+			<main class="grid effect-2" id="grid">
 
-    <main id="front">
-        <figure id="figure01"><a id="link01" href="images/!front/front.jpg" data-lightbox="0"><img id="image01" src="images/!front/front.jpg" alt="" onload="$.ajax({ url: 'images/!front/front.txt', type: 'get', dataType: 'text', async: false, success: function (title01) { $('#title01').html(title01); $('#link01').attr('data-title', title01) }}); $('#figure01').css({ display: 'inline-flex' });" /><figcaption id="title01"></figcaption></a></figure>
-    </main>
+				<!-- EDIT HERE! -->
+				<!-- <figure><a href="LINK"><img src="images/FILENAME.jpg" alt="" /><div><span>OVERLAY TEXT</span></div></a></figure> -->
+				<figure><a href="catastrophes"><img src="images/2015-huile-sur-papier/01.jpg" alt="" /><div><span>Catastrophes</span></div></a></figure>
+				<figure><a href="gouaches"><img src="images/2016-gouache-sur-papier/01.jpg" alt="" /><div><span>Gouaches</span></div></a></figure>
+				<figure><a href="dna"><img src="images/DNA/09.jpg" alt="" /><div><span>DNA</span></div></a></figure>
+				<figure><a href="huile-sur-bois"><img src="images/2017-huile-sur-bois/08.jpg" alt="" /><div><span>Huile sur bois</span></div></a></figure>
+				<figure><a href="huile-sur-toile"><img src="images/2017-huile-sur-toile/01.jpg" alt="" /><div><span>Huile sur toile</span></div></a></figure>
+				<!-- ########### -->
 
-    <footer>
-        <div>© 2018 FABIAN GRÖNING |&nbsp;<nav><a href="contact">CONTACT</a></nav></div>
-    </footer>
 
-</body>
+			</main>
+
+			<footer>© 2019 Manon Jacob</footer>
+	</body>
 </html>
