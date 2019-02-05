@@ -240,8 +240,8 @@ p {
 
 body, html { 
 	font-size: 100%; 
-	padding: 0; 
-	margin: 0 30px 0 30px;
+	padding: 0 30px; 
+	margin: 0;
 	height: -moz-calc(100% - 162px);
 	height: -webkit-calc(100% - 162px);
 	height: -o-calc(100% - 162px);
