@@ -114,7 +114,7 @@
 	}
 }
 
-@media (hover: none) {
+@media (hover:none) {
 	.home li a {
 		display: block;
 		position: absolute;
