@@ -231,15 +231,6 @@ form button:hover {
 }
 
 
-
-
-@media screen and (max-width: 72em) {
-	header {
-		width: calc(72em * var(--width-header) - 10px);
-    }
-    
-}
-
 @media screen and (max-width: 36em) {
     :root {
         --width-main: 0.96;
@@ -311,3 +302,12 @@ form button:hover {
         height: calc(var(--font-size-text) * 10 * var(--font-size-factor-small-viewport));
     }    
 }
+
+
+@media screen and (max-width: 72em) {
+	header {
+		width: calc(72em * var(--width-header) - 10px);
+    }
+    
+}
+
