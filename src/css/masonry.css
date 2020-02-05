@@ -131,7 +131,7 @@
 	}
 	
 
-	@media screen and (max-width: 40em) {
+	@media screen and (max-width:40em) {
 		.home li a p{
 			font-size: calc(var(--font-size-image-overlay-touch) * var(--font-size-factor-small-viewport));
 		}
@@ -139,7 +139,7 @@
 }
 
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width:40em) {
 	.home li {
 		width: calc(99.9% / var(--grid-column-number-home-small-viewport));
 	}

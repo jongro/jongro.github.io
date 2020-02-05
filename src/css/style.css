@@ -231,7 +231,7 @@ form button:hover {
 }
 
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width:40em) {
     :root {
         --width-main: 0.96;
     } 
@@ -304,7 +304,7 @@ form button:hover {
 }
 
 
-@media screen and (max-width: 72em) {
+@media screen and (max-width:72em) {
 	header {
 		width: calc(72em * var(--width-header) - 10px);
     }
