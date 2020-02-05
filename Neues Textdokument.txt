@@ -1,2 +1,1 @@
-gallery vorschau X größer
-
+Neue Breakpoints in px
