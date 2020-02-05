@@ -98,7 +98,7 @@
 	}
 }
 
-@media screen and (max-width: 28em) {
+@media screen and (max-width: 30em) {
 	.home li {
 		width: calc(99.9% / var(--grid-column-number-home-small-viewport));
 	}
@@ -138,7 +138,7 @@
 		opacity: 0.85;
 	}
 
-	@media screen and (max-width: 28em) {
+	@media screen and (max-width: 30em) {
 		.home li a p{
 			font-size: calc(var(--font-size-image-overlay-touch) * var(--font-size-factor-small-viewport));
 		}
