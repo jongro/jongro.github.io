@@ -240,7 +240,7 @@ form button:hover {
     
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 36em) {
     :root {
         --width-main: 0.96;
     } 
