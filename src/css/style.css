@@ -12,7 +12,8 @@
     --text-transform-text: none;
     --font-size-h1: 36px;
     --font-weight-h1: 500;
-    --font-size-nav: 24px;
+    --font-size-nav: 18px;
+    --font-size-nav-medium-small-viewport: 36px;
     --font-weight-nav: 500;
     --font-size-text: 18px;
     --font-size-image-overlay: 36px;
@@ -263,7 +264,7 @@ form button:hover {
     }
     
     nav {
-        font-size: calc(var(--font-size-nav) * var(--font-size-factor-small-viewport));
+        font-size: calc(var(--font-size-nav-medium-small-viewport) * var(--font-size-factor-small-viewport));
     }
     
     main {
@@ -309,5 +310,8 @@ form button:hover {
 		width: calc(72em * var(--width-header) - 10px);
     }
     
+    nav {
+        font-size: var(--font-size-nav-medium-small-viewport);
+    }
 }
 
