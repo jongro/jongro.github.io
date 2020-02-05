@@ -415,13 +415,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: #000;
+  background: rgba(0, 0, 0, .90);
   will-change: opacity;
 }
 
-.glightbox-mobile .goverlay {
-  background: #000;
-}
 
 .gprev,
 .gnext,
@@ -571,7 +568,7 @@ iframe.wait-autoplay {
 
 .glightbox-clean .gclose svg,
 .glightbox-modern .gclose svg {
-  width: 20px;
+  height: 35px;
 }
 
 .glightbox-clean .gclose:hover,
@@ -900,7 +897,7 @@ iframe.wait-autoplay {
     height: auto;
   }
   .goverlay {
-    background: rgba(0, 0, 0, .92);
+    background: rgba(0, 0, 0, .90);
   }
   .glightbox-clean .gslide-media,
 .glightbox-modern .gslide-media {
@@ -921,11 +918,5 @@ iframe.wait-autoplay {
   .glightbox-clean .gclose,
 .glightbox-modern .gclose {
     right: 20px;
-  }
-}
-
-@media screen and (max-height: 420px) {
-  .goverlay {
-    background: #000;
   }
 }
