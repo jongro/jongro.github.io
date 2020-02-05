@@ -232,6 +232,17 @@ form button:hover {
 }
 
 
+@media screen and (max-width:72em) {
+	header {
+		width: calc(72em * var(--width-header) - 10px);
+    }
+    
+    nav {
+        font-size: var(--font-size-nav-medium-small-viewport);
+    }
+}
+
+
 @media screen and (max-width:40em) {
     :root {
         --width-main: 0.96;
@@ -305,13 +316,4 @@ form button:hover {
 }
 
 
-@media screen and (max-width:72em) {
-	header {
-		width: calc(72em * var(--width-header) - 10px);
-    }
-    
-    nav {
-        font-size: var(--font-size-nav-medium-small-viewport);
-    }
-}
 

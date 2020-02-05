@@ -1,1 +1,2 @@
 Neue Breakpoints in px
+gallery hintergrund transparenter
