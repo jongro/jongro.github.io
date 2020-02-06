@@ -128,7 +128,7 @@ lightbox = function lightbox(image) {
 		var xUp = evt.touches[0].clientX;                                    
 		var xDiff = xDown - xUp;
 
-		if ( xDiff > 15) {
+		if ( xDiff > 1) {
 			image = image.parentNode.nextSibling.nextSibling.childNodes[[0]];
 		
 			lightbox.style.visibility = "hidden";
@@ -149,7 +149,7 @@ lightbox = function lightbox(image) {
 					}
 				}, 400
 			)
-		} else if (xDiff < -15 ) {
+		} else if (xDiff < -1 ) {
 			image = image.parentNode.previousSibling.previousSibling.childNodes[[0]];
 		
 			lightbox.style.visibility = "hidden";
