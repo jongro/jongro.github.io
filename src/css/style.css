@@ -146,7 +146,7 @@ form p {
 }
 
 form textarea::placeholder, form input::placeholder {
-    color: #F2F2EE;
+    color: #dddddd;
     opacity: 1;
 
 }
