@@ -135,10 +135,10 @@ footer {
 
 form {
     margin: 0 var(--grid-column-margin);
-    background-color: #F4F5F6;
+    background-color: #F2F2EE;
     padding: 40px;
     font-weight: 500;
-    color: #777777;
+    color: #636B6F;
 }
 
 form p {
@@ -146,7 +146,7 @@ form p {
 }
 
 form textarea::placeholder, form input::placeholder {
-    color: #dddddd;
+    color: #F2F2EE;
     opacity: 1;
 
 }
