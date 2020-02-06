@@ -24,6 +24,10 @@ a {
     text-decoration: none;
 }
 
+a {
+    user-select: none;
+}
+
 a:hover {
     color: var(--font-color-highlight)
 }
