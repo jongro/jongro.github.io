@@ -109,7 +109,8 @@ lightbox = function lightbox(image) {
 	document.addEventListener('touchstart', handleTouchStart, false);        
 	document.addEventListener('touchmove', handleTouchMove, false);
 
-	var xDown = null;                                                        
+	var xDown = null;
+	var stop = null;                                                     
 
 	function getTouches(evt) {
 	return evt.touches}                                                     
@@ -127,14 +128,14 @@ lightbox = function lightbox(image) {
 		var xUp = evt.touches[0].clientX;                                    
 		var xDiff = xDown - xUp;
 
-		if ( xDiff > 0 ) {
+		if ( xDiff > 15) {
 			image = image.parentNode.nextSibling.nextSibling.childNodes[[0]];
 		
 			lightbox.style.visibility = "hidden";
 			lightbox.style.opacity = "0";
 		
 			if (!image.parentNode.nextSibling.nextSibling) {
-				this.style.display = "none";
+				next.style.display = "none";
 			}
 			if (image.parentNode.previousSibling.previousSibling) {
 				prev.style.display = "block";
@@ -148,14 +149,14 @@ lightbox = function lightbox(image) {
 					}
 				}, 400
 			)
-		} else {
+		} else if (xDiff < -15 ) {
 			image = image.parentNode.previousSibling.previousSibling.childNodes[[0]];
 		
 			lightbox.style.visibility = "hidden";
 			lightbox.style.opacity = "0";
 		
 			if (!image.parentNode.previousSibling.previousSibling) {
-				this.style.display = "none";
+				prev.style.display = "none";
 				}
 			if (image.parentNode.nextSibling.nextSibling) {
 				next.style.display = "block";
@@ -169,7 +170,9 @@ lightbox = function lightbox(image) {
 					}
 				}, 400
 			)
-		}                       
+		} else {
+
+		}                      
 
 		/* reset values */
 		xDown = null;
