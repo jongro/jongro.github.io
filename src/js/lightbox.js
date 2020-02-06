@@ -16,6 +16,12 @@ window.onload = function () {
 	next.id = "next";
 	next.classList.add("material-icons");
 	document.body.appendChild(next);
+
+	var close = document.createElement("i");
+	close.id = "close";
+	close.classList.add("material-icons");
+	document.body.appendChild(close);
+
 }
 
 lightbox = function lightbox(image) {
@@ -24,6 +30,7 @@ lightbox = function lightbox(image) {
 	var lightboxbackground = document.getElementById("lightboxbackground")
 	var next = document.getElementById("next")
 	var prev = document.getElementById("prev")
+	var close = document.getElementById("close")
 
 	lightbox.src = image.src;
 	lightbox.style.visibility = "visible";
@@ -31,9 +38,11 @@ lightbox = function lightbox(image) {
 	lightboxbackground.style.visibility = "visible";
 	lightboxbackground.style.opacity = "0.9";
 	next.style.visibility = "visible";
-	next.style.opacity = "1";
+	next.style.opacity = "0.7";
 	prev.style.visibility = "visible";
-	prev.style.opacity = "1";
+	prev.style.opacity = "0.7";
+	close.style.visibility = "visible";
+	close.style.opacity = "0.7";
 
 	if (!image.parentNode.nextSibling.nextSibling) {
 		next.style.display = "none";
@@ -57,6 +66,21 @@ lightbox = function lightbox(image) {
 		next.style.opacity = "0";
 		prev.style.visibility = "hidden";
 		prev.style.opacity = "0";
+		close.style.visibility = "hidden";
+		close.style.opacity = "0";
+	}
+
+	document.getElementById("close").onclick = function() {
+		lightbox.style.visibility = "hidden";
+		lightbox.style.opacity = "0";
+		lightboxbackground.style.visibility = "hidden";
+		lightboxbackground.style.opacity = "0";
+		next.style.visibility = "hidden";
+		next.style.opacity = "0";
+		prev.style.visibility = "hidden";
+		prev.style.opacity = "0";
+		close.style.visibility = "hidden";
+		close.style.opacity = "0";
 	}
 
 	document.getElementById("next").onclick = function() {
@@ -127,7 +151,7 @@ lightbox = function lightbox(image) {
 		var xUp = evt.touches[0].clientX;                                    
 		var xDiff = xDown - xUp;
 
-		if ( xDiff > 0.1 && image.parentNode.nextSibling.nextSibling) {
+		if ( xDiff > 0.2 && image.parentNode.nextSibling.nextSibling) {
 			image = image.parentNode.nextSibling.nextSibling.childNodes[[0]];
 
 			lightbox.style.visibility = "hidden";
@@ -148,7 +172,7 @@ lightbox = function lightbox(image) {
 					}
 				}, 400
 			)
-		} else if (xDiff < -0.1 && image.parentNode.previousSibling.previousSibling) {
+		} else if (xDiff < -0.2 && image.parentNode.previousSibling.previousSibling) {
 			image = image.parentNode.previousSibling.previousSibling.childNodes[[0]];
 		
 			lightbox.style.visibility = "hidden";

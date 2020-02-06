@@ -58,7 +58,7 @@
 	100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
 }
 
-@media screen and (max-width: 72em) {
+@media screen and (max-width:1100px) {
 	.home li {
 		width: calc(99.9% / var(--grid-column-number-home-medium-viewport));
 	}
@@ -68,7 +68,7 @@
 	}
 }
 
-@media screen and (max-width:40em) {
+@media screen and (max-width:500px) {
 	.home li {
 		width: calc(99.9% / var(--grid-column-number-home-small-viewport));
 	}
@@ -145,7 +145,7 @@
 	}
 	
 
-	@media screen and (max-width:40em) {
+	@media screen and (max-width:500px) {
 		.home li a p{
 			font-size: calc(var(--font-size-image-overlay-touch) * var(--font-size-factor-small-viewport));
 		}

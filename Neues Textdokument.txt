@@ -1,7 +1,0 @@
-Neue Breakpoints in px
-
-X im Menü größer
-
-styles und js aufräumen
-
-lightbox pfeile abstand und padding in %

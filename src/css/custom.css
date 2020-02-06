@@ -1,0 +1,49 @@
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500,700,700i&display=swap');
+
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --font-color: #222222;
+    --font-color-highlight: #4ECDC4;
+    --text-transform-menu: uppercase;
+    --text-transform-text: none;
+    --font-size-h1: 36px;
+    --font-weight-h1: 500;
+    --font-size-nav: 18px;
+    --font-size-nav-medium-small-viewport: 36px;
+    --font-weight-nav: 500;
+    --font-size-text: 18px;
+    --font-size-image-overlay: 36px;
+    --font-size-image-overlay-touch: 18px;
+    --font-weight-image-overlay: 500;
+    --font-size-footer: 12px;
+    --font-weight-footer: 400;
+    --font-size-factor-small-viewport: 0.8;
+
+    --width-header: 0.6;
+    --width-main: 0.8;
+    --max-width-gallery: 800px;
+    --max-width-about: 944px;
+    --max-width-text: 700px;
+    --max-width-contact: 700px;
+    --max-width: 2000px;
+    --min-width: 100px;
+
+    --margin-top-header: 80px;
+    --margin-top-main: 100px;
+    --margin-top-footer: 100px;
+    --margin-right-about-year: 180px;
+
+	--grid-column-number-home-large-viewport: 3;
+	--grid-column-number-home-medium-viewport: 2;
+    --grid-column-number-home-small-viewport: 1;
+
+    --grid-column-number-gallery-large-viewport: 1;
+	--grid-column-number-gallery-medium-viewport: 1;
+    --grid-column-number-gallery-small-viewport: 1;
+    
+    --grid-column-margin: 8px;
+
+  }
