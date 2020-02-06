@@ -130,7 +130,7 @@ lightbox = function lightbox(image) {
 		var xUp = evt.touches[0].clientX;                                    
 		var xDiff = xDown - xUp;
 
-		if ( xDiff > 0.4) {
+		if ( xDiff > 0.05) {
 			if (!stopnext) {
 				image = image.parentNode.nextSibling.nextSibling.childNodes[[0]];
 			}
@@ -156,7 +156,7 @@ lightbox = function lightbox(image) {
 					}
 				}, 400
 			)
-		} else if (xDiff < -0.4 ) {
+		} else if (xDiff < -0.05 ) {
 			if (!stopprev) {
 				image = image.parentNode.previousSibling.previousSibling.childNodes[[0]];
 			}
