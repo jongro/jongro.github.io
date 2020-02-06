@@ -110,7 +110,9 @@ lightbox = function lightbox(image) {
 	document.addEventListener('touchmove', handleTouchMove, false);
 
 	var xDown = null;
-	var stop = null;                                                     
+	var stopnext = null;    
+	var stopprev = null;                                                     
+                                                 
 
 	function getTouches(evt) {
 	return evt.touches}                                                     
@@ -128,14 +130,19 @@ lightbox = function lightbox(image) {
 		var xUp = evt.touches[0].clientX;                                    
 		var xDiff = xDown - xUp;
 
-		if ( xDiff > 1) {
-			image = image.parentNode.nextSibling.nextSibling.childNodes[[0]];
+		if ( xDiff > 0.4) {
+			if (!stopnext) {
+				image = image.parentNode.nextSibling.nextSibling.childNodes[[0]];
+			}
 		
 			lightbox.style.visibility = "hidden";
 			lightbox.style.opacity = "0";
 		
 			if (!image.parentNode.nextSibling.nextSibling) {
 				next.style.display = "none";
+			}
+			if (!image.parentNode.nextSibling.nextSibling) {
+				stop = true;
 			}
 			if (image.parentNode.previousSibling.previousSibling) {
 				prev.style.display = "block";
@@ -149,8 +156,10 @@ lightbox = function lightbox(image) {
 					}
 				}, 400
 			)
-		} else if (xDiff < -1 ) {
-			image = image.parentNode.previousSibling.previousSibling.childNodes[[0]];
+		} else if (xDiff < -0.4 ) {
+			if (!stopprev) {
+				image = image.parentNode.previousSibling.previousSibling.childNodes[[0]];
+			}
 		
 			lightbox.style.visibility = "hidden";
 			lightbox.style.opacity = "0";
@@ -158,6 +167,9 @@ lightbox = function lightbox(image) {
 			if (!image.parentNode.previousSibling.previousSibling) {
 				prev.style.display = "none";
 				}
+			if (!image.parentNode.previousSibling.previousSibling) {
+				stoprev = true;
+				}	
 			if (image.parentNode.nextSibling.nextSibling) {
 				next.style.display = "block";
 			}
