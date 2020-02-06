@@ -1,2 +1,3 @@
 Neue Breakpoints in px
-gallery hintergrund transparenter
+
+styles und js aufräumen
