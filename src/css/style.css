@@ -22,9 +22,6 @@ body {
 a {
     color: var(--font-color);
     text-decoration: none;
-}
-
-a {
     user-select: none;
 }
 
