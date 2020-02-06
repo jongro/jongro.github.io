@@ -53,7 +53,7 @@
 
 
  
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     nav ul {
         visibility: hidden;
         opacity: 0;
@@ -89,7 +89,7 @@
     }
   }
   
-  @media screen and (min-width: 1101px) {
+  @media screen and (min-width: 1201px) {
     nav ul {
         visibility: visible !important;
         opacity: 1 !important;

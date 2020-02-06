@@ -25,7 +25,7 @@
     --width-header: 0.6;
     --width-main: 0.8;
     --max-width-gallery: 800px;
-    --max-width-about: 944px;
+    --max-width-about: 866px;
     --max-width-text: 700px;
     --max-width-contact: 700px;
     --max-width: 2000px;
@@ -34,7 +34,6 @@
     --margin-top-header: 80px;
     --margin-top-main: 100px;
     --margin-top-footer: 100px;
-    --margin-right-about-year: 180px;
 
 	--grid-column-number-home-large-viewport: 3;
 	--grid-column-number-home-medium-viewport: 2;

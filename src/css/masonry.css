@@ -58,7 +58,7 @@
 	100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1200px) {
 	.home li {
 		width: calc(99.9% / var(--grid-column-number-home-medium-viewport));
 	}
