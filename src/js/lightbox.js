@@ -128,16 +128,16 @@ lightbox = function lightbox(image) {
 		var xDiff = xDown - xUp;
 
 		if ( xDiff > 0 ) {
-			image = image.parentNode.previousSibling.previousSibling.childNodes[[0]];
+			image = image.parentNode.nextSibling.nextSibling.childNodes[[0]];
 		
 			lightbox.style.visibility = "hidden";
 			lightbox.style.opacity = "0";
 		
-			if (!image.parentNode.previousSibling.previousSibling) {
+			if (!image.parentNode.nextSibling.nextSibling) {
 				this.style.display = "none";
-				}
-			if (image.parentNode.nextSibling.nextSibling) {
-				next.style.display = "block";
+			}
+			if (image.parentNode.previousSibling.previousSibling) {
+				prev.style.display = "block";
 			}
 		
 			setTimeout(function(){
@@ -149,16 +149,16 @@ lightbox = function lightbox(image) {
 				}, 400
 			)
 		} else {
-			image = image.parentNode.nextSibling.nextSibling.childNodes[[0]];
+			image = image.parentNode.previousSibling.previousSibling.childNodes[[0]];
 		
 			lightbox.style.visibility = "hidden";
 			lightbox.style.opacity = "0";
 		
-			if (!image.parentNode.nextSibling.nextSibling) {
+			if (!image.parentNode.previousSibling.previousSibling) {
 				this.style.display = "none";
-			}
-			if (image.parentNode.previousSibling.previousSibling) {
-				prev.style.display = "block";
+				}
+			if (image.parentNode.nextSibling.nextSibling) {
+				next.style.display = "block";
 			}
 		
 			setTimeout(function(){
