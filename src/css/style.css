@@ -2,7 +2,7 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500,700,700i&display=swap');
-
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 :root {
     --font-family: 'Poppins', sans-serif;
@@ -69,6 +69,21 @@ body {
     height: 100%;
 }
 
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: white;
+}
+
 a {
     color: var(--font-color);
     text-decoration: none;
@@ -76,6 +91,10 @@ a {
 
 a:hover {
     color: var(--font-color-highlight)
+}
+
+a:focus {
+    outline: 0;
 }
 
 #active {
@@ -115,6 +134,14 @@ main {
     min-width: var(--min-width);
     margin: var(--margin-top-main) auto 0 auto;
     font-size: var(--font-size-text);
+}
+
+img {
+    user-select: none;
+}
+
+i {
+    user-select: none;
 }
 
 .about {
@@ -317,3 +344,81 @@ form button:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************/
+
+
+.gallery img:hover {
+    cursor: pointer;
+}
+
+#lightbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 84%;
+    max-height: 84%;
+    z-index: 999999;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease;
+    padding: 18px;
+    background-color: white;
+}
+
+#lightboxbackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 99999;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+#next, #prev {
+    position: fixed;
+    padding: 12px;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 99999999;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+#next:hover, #prev:hover {
+    cursor: pointer;
+}
+
+#next {
+    right: 0;
+}
+
+#next::after {
+    content: "chevron_right";
+}
+
+#prev {
+    left: 0;
+}
+
+#prev::after {
+    content: "chevron_left";
+    left: 0;
+}
