@@ -94,6 +94,14 @@ i {
 
 .about .cv-year {
     font-weight: 500;
+    color: white;
+    background-color: var(--font-color-highlight)
+}
+
+.about .cv-year::before {
+    content: "\00a0";
+    background-color: var(--font-color-highlight)
+
 }
 
 .about .cv-description {
@@ -112,8 +120,16 @@ i {
 }
 
 .text section p {
-    text-align: right;
+    display: block;
+    float: right;
     margin-top: calc(var(--font-size-text) * 3.6);
+    background-color: var(--font-color-highlight);
+    color: white;
+}
+
+.text section p::before, .text section p::after {
+    content: "\00a0";
+    background-color: var(--font-color-highlight)
 }
 
 .contact {

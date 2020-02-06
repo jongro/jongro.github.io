@@ -137,7 +137,6 @@
 		font-weight: var(--font-weight-image-overlay);
 		color: white;
 		background-color: var(--font-color-highlight);
-		opacity: 0.85;
 	}
 
 	.grid li:hover a {
