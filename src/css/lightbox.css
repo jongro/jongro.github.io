@@ -96,6 +96,5 @@
 
 @media (hover:none) {
     #next, #prev {
-        display: none;
-    }
+        z-index: 0;
 }
