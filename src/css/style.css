@@ -128,6 +128,7 @@ i {
 
 .text section p span {
     background-color: var(--font-color-highlight);
+    font-weight: 500;
     color: white;
 }
 
