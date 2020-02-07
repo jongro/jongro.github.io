@@ -38,11 +38,11 @@ lightbox = function lightbox(image) {
 	lightboxbackground.style.visibility = "visible";
 	lightboxbackground.style.opacity = "0.9";
 	next.style.visibility = "visible";
-	next.style.opacity = "0.7";
+	next.style.opacity = "0.9";
 	prev.style.visibility = "visible";
-	prev.style.opacity = "0.7";
+	prev.style.opacity = "0.9";
 	close.style.visibility = "visible";
-	close.style.opacity = "0.7";
+	close.style.opacity = "0.9";
 
 	if (!image.parentNode.nextSibling.nextSibling) {
 		next.style.display = "none";
