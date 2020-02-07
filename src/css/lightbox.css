@@ -96,5 +96,6 @@
 
 @media (hover:none) {
     #next, #prev {
+        margin-top: -999999px;
         z-index: 0;
 }
