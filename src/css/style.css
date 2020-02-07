@@ -123,11 +123,15 @@ i {
     display: block;
     float: right;
     margin-top: calc(var(--font-size-text) * 3.6);
+
+}
+
+.text section p span {
     background-color: var(--font-color-highlight);
     color: white;
 }
 
-.text section p::before, .text section p::after {
+.text section p span::before, .text section p span::after {
     content: "\00a0";
     background-color: var(--font-color-highlight)
 }
