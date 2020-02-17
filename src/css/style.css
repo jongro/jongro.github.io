@@ -94,14 +94,12 @@ i {
 
 .about .cv-year {
     font-weight: 500;
-    color: white;
-    background-color: var(--font-color-highlight)
+    box-shadow: inset 0 calc(var(--font-size-text) / 1.5 * -1) 0 0 var(--font-color-highlight);
 }
 
 .about .cv-year::before {
     content: "\00a0";
-    background-color: var(--font-color-highlight)
-
+    box-shadow: inset 0 calc(var(--font-size-text) / 1.4 * -1) 0 0 var(--font-color-highlight);
 }
 
 .about .cv-description {
@@ -127,14 +125,13 @@ i {
 }
 
 .text section p span {
-    background-color: var(--font-color-highlight);
+    box-shadow: inset 0 calc(var(--font-size-text) / 1.5 * -1) 0 0 var(--font-color-highlight);
     font-weight: 500;
-    color: white;
 }
 
 .text section p span::before, .text section p span::after {
     content: "\00a0";
-    background-color: var(--font-color-highlight)
+    box-shadow: inset 0 calc(var(--font-size-text) / 1.5 * -1) 0 0 var(--font-color-highlight);
 }
 
 .contact {
@@ -263,10 +260,17 @@ form button:hover {
         margin-bottom: calc(var(--font-size-text) / 3 * var(--font-size-factor-small-viewport));
     }
     
+    .about .cv-year, .about .cv-year::before {
+        box-shadow: inset 0 calc((var(--font-size-text) * var(--font-size-factor-small-viewport)) / 1.5 * -1) 0 0 var(--font-color-highlight);
+    }
+
     .text section p {
         margin-top: calc(var(--font-size-text) * 3.6 * var(--font-size-factor-small-viewport));
     }
-    
+
+    .text section p span,  .text section p span::before, .text section p span::after {
+        box-shadow: inset 0 calc((var(--font-size-text) * var(--font-size-factor-small-viewport)) / 1.5 * -1) 0 0 var(--font-color-highlight);
+    }
     
     footer {
         font-size: calc(var(--font-size-footer) * var(--font-size-factor-small-viewport));
