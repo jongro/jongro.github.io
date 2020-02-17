@@ -1,6 +1,4 @@
-window.onload = function () {
-	document.getElementById("year").innerHTML = new Date().getFullYear();
-}
+document.getElementById("year").innerHTML = new Date().getFullYear();
 
 function toggle() {
 	document.getElementById("button-menu").classList.toggle("is-active");
