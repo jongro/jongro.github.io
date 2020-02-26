@@ -17,6 +17,11 @@ body {
     text-transform: var(--text-transform-menu);
     overflow-y: scroll;
     height: 100%;
+
+    width: calc(var(--width-body) * 100%);
+    max-width: calc(var(--max-width) * var(--width-body)) ;
+    min-width: var(--min-width);
+    margin: 0 auto;
 }
 
 a {
@@ -37,10 +42,9 @@ a:focus {
 }
 
 header {
-    width: calc(var(--width-header) * 100%);
-    max-width: calc(var(--width-main) * 100% - (var(--grid-column-margin) * 2));
-    min-width: var(--min-width);
-    margin: var(--margin-top-header) auto 0 auto;
+    width: calc(100%  - (var(--grid-column-margin) * 2));
+    max-width: calc(100% - (var(--grid-column-margin) * 2));
+    margin-top: var(--margin-top-header);
     line-height: var(--font-size-h1);
     text-align: middle;
 }
@@ -64,9 +68,8 @@ nav ul li {
 }
 
 main {
-    width: calc(var(--width-main) * 100%);
-    max-width: calc(var(--max-width) * var(--width-main)) ;
-    min-width: var(--min-width);
+    width: 100%;
+    max-width: 100%;
     margin: var(--margin-top-main) auto 0 auto;
     font-size: var(--font-size-text);
 }
@@ -80,6 +83,7 @@ i {
 }
 
 .about {
+    width: 100%;
     max-width: var(--max-width-about);
     text-transform: var(--text-transform-text);
 }
@@ -140,7 +144,7 @@ i {
 }
 
 footer {   
-    margin: var(--margin-top-footer) auto 0 auto;
+    margin-top: var(--margin-top-footer);
     text-align: center;
     font-size: var(--font-size-footer);
     font-weight: var(--font-weight-footer);
@@ -212,7 +216,9 @@ form button:hover {
 
 @media screen and (max-width:1200px) {
 	header {
-		width: calc(1200px * var(--width-header) - 10px);
+        width: calc(1200px - (var(--grid-column-margin) * 2));
+        max-width: calc(100%  - (var(--grid-column-margin) * 2));
+
     }
     
     nav {
@@ -223,7 +229,7 @@ form button:hover {
 
 @media screen and (max-width:500px) {
     :root {
-        --width-main: 0.96;
+        --width-body: 0.96;
     } 
 
 	h1 {
@@ -237,6 +243,7 @@ form button:hover {
 
     header {
         line-height: calc(var(--font-size-h1) * var(--font-size-factor-small-viewport));
+        margin-top: calc(var(--margin-top-header) * var(--font-size-factor-small-viewport));
     }
     
     
@@ -250,6 +257,7 @@ form button:hover {
     
     main {
         font-size: calc(var(--font-size-text) * var(--font-size-factor-small-viewport));
+        margin-top: calc(var(--margin-top-main) * var(--font-size-factor-small-viewport));
     }
     
     .about section {
@@ -274,6 +282,7 @@ form button:hover {
     
     footer {
         font-size: calc(var(--font-size-footer) * var(--font-size-factor-small-viewport));
+        margin: calc(var(--margin-top-footer) * var(--font-size-factor-small-viewport)) auto 0 auto;
     }
     
     form p {

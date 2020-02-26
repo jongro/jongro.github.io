@@ -22,20 +22,19 @@
     --font-weight-footer: 400;
     --font-size-factor-small-viewport: 0.8;
 
-    --width-header: 0.6;
-    --width-main: 0.8;
-    --max-width-gallery: 800px;
-    --max-width-about: 870px;
+    --width-body: 0.8;
+    --max-width-gallery: 500px;
+    --max-width-about: 100%;
     --max-width-text: 700px;
     --max-width-contact: 700px;
-    --max-width: 2000px;
+    --max-width: 1250px;
     --min-width: 100px;
 
     --margin-top-header: 80px;
     --margin-top-main: 100px;
     --margin-top-footer: 100px;
 
-	--grid-column-number-home-large-viewport: 3;
+	--grid-column-number-home-large-viewport: 2;
 	--grid-column-number-home-medium-viewport: 2;
     --grid-column-number-home-small-viewport: 1;
 

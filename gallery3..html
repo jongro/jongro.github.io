@@ -6,12 +6,13 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Fabian Gröning</title>
+    <title>Gallery - Fabian Gröning</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fabian Gröning - Official Website">
+    <meta name="robots" content="noindex">
     <link rel="shortcut icon" type="image/x-icon" href="src/img/favicon.png">
     <link rel="stylesheet" href="src/css/custom.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/lightbox.css">
     <link rel="stylesheet" href="src/css/menu.css">
     <link rel="stylesheet" href="src/css/masonry.css">
 </head>
@@ -23,21 +24,28 @@
 		<nav>
             <button class="button-menu" id="button-menu" onclick="toggle()"></button>
 			<ul>
-                <li><a id="active" href="/">Projects</a></li>
+                <li><a href="/">Projects</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/text">Text</a></li>
                 <li><a href="/contact">Contact</a></li>
 			</ul>
 		</nav>
-    </header>
-  
+    </header> 
+    
     <main>
-        <ul class="grid home" id="grid">
-            <li><img src="images/1/01.jpg"><a href="/gallery1"><p>1</p></a></li>
-            <li><img src="images/2/11.jpg"><a href="/gallery2"><p>2</p></a></li>
-            <li><img src="images/3/05.jpg"><a href="/gallery3"><p>3</p></a></li>
-            <li><img src="images/4/23.jpg"><a href="/gallery4"><p>4</p></a></li>
+        <ul class="grid gallery" id="grid">
+            <li><img src="images/3/05.jpg" alt="image"></li>
+            <li><img src="images/3/06.jpg" alt="image"></li>
+            <li><img src="images/3/07.jpg" alt="image"></li>
+            <li><img src="images/3/08.jpg" alt="image"></li>
+            <li><img src="images/3/09.jpg" alt="image"></li>
+            <li><img src="images/3/10.jpg" alt="image"></li>
+            <li><img src="images/3/21.jpg" alt="image"></li>
+            <li><img src="images/3/22.jpg" alt="image"></li>
          </ul>
+
+
+
     </main>
 
 	<footer>
@@ -50,6 +58,7 @@
     <script src="src/js/imagesloaded.js"></script>
     <script src="src/js/classie.js"></script>
     <script src="src/js/AnimOnScroll.js"></script>
+    <script src="src/js/lightbox.js"></script>
     <script src="src/js/functions.js"></script>
 
 
