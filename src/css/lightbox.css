@@ -27,8 +27,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 10000px;
-    height: auto;
     max-width: 84%;
     max-height: 84%;
     z-index: 999999;
