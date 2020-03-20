@@ -28,6 +28,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 84%;
+    height: 84%;
     z-index: 999999;
     visibility: hidden;
     opacity: 0;
