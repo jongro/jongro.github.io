@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 html {
@@ -72,14 +73,6 @@ main {
     max-width: 100%;
     margin: var(--margin-top-main) auto 0 auto;
     font-size: var(--font-size-text);
-}
-
-img {
-    user-select: none;
-}
-
-i {
-    user-select: none;
 }
 
 .about {

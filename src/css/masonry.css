@@ -68,6 +68,12 @@
 	}
 }
 
+@media screen and (max-width:800px) {
+	.home li a {
+		font-size: calc(var(--font-size-image-overlay) * var(--font-size-factor-small-viewport));
+	}
+}
+
 @media screen and (max-width:500px) {
 	.home li {
 		width: calc(99.9% / var(--grid-column-number-home-small-viewport));
