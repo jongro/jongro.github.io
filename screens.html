@@ -6,12 +6,13 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Fabian Gröning</title>
+    <title>Gallery - Fabian Gröning</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fabian Gröning - Official Website">
+    <meta name="robots" content="noindex">
     <link rel="shortcut icon" type="image/x-icon" href="src/img/favicon.png">
     <link rel="stylesheet" href="src/css/custom.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/lightbox.css">
     <link rel="stylesheet" href="src/css/menu.css">
     <link rel="stylesheet" href="src/css/masonry.css">
 </head>
@@ -23,27 +24,25 @@
 		<nav>
             <button class="button-menu" id="button-menu" onclick="toggle()"></button>
 			<ul>
-                <li><a id="active" href="/">Projects</a></li>
+                <li><a href="/">Projects</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/text">Text</a></li>
                 <li><a href="/contact">Contact</a></li>
 			</ul>
 		</nav>
-    </header>
-  
+    </header> 
+    
     <main>
-        <ul class="grid home" id="grid">
-            <li><img src="images/Gouache/start.jpg"><a href="/gouache"><p>Gouache</p></a></li>
-            <li><img src="images/DNA/start.jpg"><a href="/dna"><p>DNA</p></a></li>
-            <li><img src="images/Moyen/start.jpg"><a href="/moyen"><p>Moyen</p></a></li>
-            <li><img src="images/Monotype/start.jpg"><a href="/monotype"><p>Monotype</p></a></li>
-            <li><img src="images/Lumière d'été/start.jpg"><a href="/lumiere"><p>Lumière d'été</p></a></li>
-            <li><img src="images/Végétation/start.jpg"><a href="/vegetation"><p>Végétation</p></a></li>
-            <li><img src="images/Memories/start.jpg"><a href="/memories"><p>Memories</p></a></li>
-            <li><img src="images/Catastrophe/start.jpg"><a href="/catastrophe"><p>Catastrophe</p></a></li>
-            <li><img src="images/Fusain/start.jpg"><a href="/fusain"><p>Fusain</p></a></li>
-            <li><img src="images/Screens/start.jpg"><a href="/screens"><p>Screens</p></a></li>
+        <ul class="grid gallery" id="grid">
+            <li><img src="images/Screens/01.jpg" alt="image"></li>
+            <li><img src="images/Screens/02.jpg" alt="image"></li>
+            <li><img src="images/Screens/03.jpg" alt="image"></li>
+            <li><img src="images/Screens/04.jpg" alt="image"></li>
+            <li><img src="images/Screens/05.jpg" alt="image"></li>
          </ul>
+
+
+
     </main>
 
 	<footer>
@@ -56,6 +55,7 @@
     <script src="src/js/imagesloaded.js"></script>
     <script src="src/js/classie.js"></script>
     <script src="src/js/AnimOnScroll.js"></script>
+    <script src="src/js/lightbox.js"></script>
     <script src="src/js/functions.js"></script>
 
 
