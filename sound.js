@@ -2,7 +2,7 @@ var canvas = document.getElementById("canvas")
 var tone = document.getElementById("tone")
 
 
-var reverb = new Tone.Reverb({ decay : 10, preDelay : 0}).toMaster()
+var reverb = new Tone.Reverb({ decay : 8, preDelay : 0}).toMaster()
 reverb.generate()
 reverb.wet.value = 1;
 
