@@ -53,6 +53,3 @@ function stopMusic() {
 
 canvas.addEventListener("mousedown", playMusic)
 addEventListener("mouseup", stopMusic)
-
-canvas.addEventListener("touchstart", playMusic)
-addEventListener("touchend", stopMusic)
