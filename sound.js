@@ -2,19 +2,37 @@ var canvas = document.getElementById("canvas")
 var tone = document.getElementById("tone")
 
 
-//create an effect and connect it to the master output
-var reverb = new Tone.Freeverb(0.94, 300).toMaster();
+var reverb = new Tone.Reverb({ decay : 10, preDelay : 0}).toMaster()
+reverb.generate()
 reverb.wet.value = 1;
+
+var synth = new Tone.Synth({
+    oscillator: {
+      type: 'fatsawtooth',
+      partialCount : 24,
+      spread: 100,
+      count: 20
+    },
+    envelope: {
+      attack: 2,
+      decay: 2,
+      sustain: 1,
+      release: 2
+    }
+  }).connect(reverb);
+
+
+
 
 
 //create a synth and connect it to the effect
-var synth = new Tone.Synth().connect(reverb);
+//var synth = new Tone.Synth().connect(reverb);
 
 
 function playMusic(event) {
 
 
-    var tones = ["C3", "D3", "E3", "F3", "G3", "A3", "B3", "C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5", "D5"]
+    var tones = ["A1", "C2", "E2", "G2", "B2", "A2", "C3", "E3", "G3", "B3", "A3", "C4", "E4", "G4", "B4"]
 
     var yabs = event.clientY
     
@@ -35,6 +53,4 @@ function stopMusic() {
 
 canvas.addEventListener("mousedown", playMusic)
 addEventListener("mouseup", stopMusic)
-canvas.addEventListener("touchstart", playMusic)
-addEventListener("touchend", stopMusic)
 
