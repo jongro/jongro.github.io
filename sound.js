@@ -9,7 +9,7 @@ reverb.wet.value = 1;
 var synth = new Tone.Synth({
     oscillator: {
       type: 'fatsawtooth',
-      partialCount : 24,
+      partialCount : 20,
       spread: 100,
       count: 20
     },
