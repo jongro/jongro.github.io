@@ -1,6 +1,8 @@
 var canvas = document.getElementById("canvas")
 var tone = document.getElementById("tone")
 
+var tones = ["A1", "C2", "E2", "G2", "B2", "A2", "C3", "E3", "G3", "B3", "A3", "C4", "E4", "G4", "B4"]
+
 
 var reverb = new Tone.Reverb({ decay : 8, preDelay : 0}).toMaster()
 reverb.generate()
@@ -23,16 +25,7 @@ var synth = new Tone.Synth({
 
 
 
-
-
-//create a synth and connect it to the effect
-//var synth = new Tone.Synth().connect(reverb);
-
-
 function playMusic(event) {
-
-
-    var tones = ["A1", "C2", "E2", "G2", "B2", "A2", "C3", "E3", "G3", "B3", "A3", "C4", "E4", "G4", "B4"]
 
     var yabs = event.clientY
     

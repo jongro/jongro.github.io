@@ -51,6 +51,7 @@ p {
     border-top-left-radius: 1vw;
     border-top-right-radius: 1vw;
     box-shadow: 0 0 0.8vw #22222230;
+    z-index: 999999999999999;
 }
 
 #menu ul {
@@ -81,10 +82,66 @@ p {
     height: 3.5vw;
 }
 
-#menu li img{
+#menu li img {
     height: 100%;
     margin: 0 0.6vw;
 }
+
+/*DOWNLOAD*/
+
+#overlayRecord {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 999999999999999999999;
+    animation: downloadOverlay 1s ease;
+}
+
+@keyframes downloadOverlay{
+    from {
+        opacity: 0;
+    }
+}
+
+#downloadRecord {
+    position: fixed;
+    opacity: 0;
+    width: 75vw;
+    height: 75vw;
+    max-width: 75vh;
+    max-height: 75vh;
+    top: 0;
+    right: 0;
+    bottom: 6vw;
+    left: 0;
+    margin: auto;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 9999999999999999999999999999;
+    animation: download 3s ease 0.25s forwards;
+}
+
+@keyframes download{
+    from {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    to {
+        opacity: 1;
+        width: 75vw;
+        height: 75vw;
+        max-width: 75vh;
+        max-height: 75vh;
+    }
+}
+
 
 
 /*LOOPS*/

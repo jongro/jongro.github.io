@@ -7,18 +7,26 @@
 var play = document.getElementById("play")
 var pause = document.getElementById("pause")
 
+var allLoops = document.getElementById("loops").getElementsByTagName("li")
+
 function pauseAllFunction() {
-    play.style.display = "none"
-    pause.style.display = "block"
+    play.style.display = "block"
+    pause.style.display = "none"
+    for (i = 0; i < allLoops.length; i++) {
+        pauseLoopFunction(allLoops[i].id);
+      } 
 }
 
 function playAllFunction() {
-    pause.style.display = "none"
-    play.style.display = "block"
+    pause.style.display = "block"
+    play.style.display = "none"
+    for (i = 0; i < allLoops.length; i++) {
+        playLoopFunction(allLoops[i].id);
+      } 
 }
 
-play.addEventListener("click", pauseAllFunction)
-pause.addEventListener("click", playAllFunction)
+play.addEventListener("click", playAllFunction)
+pause.addEventListener("click", pauseAllFunction)
 
 
 /*loop*/
@@ -94,9 +102,80 @@ startRecordLoop.addEventListener("click", startRecordLoopFunction)
 stopRecordLoop.addEventListener("click", stopRecordLoopFunction)
 
 
+/*random*/
+
+var startRandomMusic = document.getElementById("startRandomMusic")
+var stopRandomMusic = document.getElementById("stopRandomMusic")
+
+    function startRandomMusicFunction() {
+
+        startRandomMusic.style.display = "none";
+        stopRandomMusic.style.display = "inline";
+        
+        function playRandomMusic() {
+        randomMusic = setInterval(function() {
+            var toneLenght = String(Math.floor(Math.random() * 14 + 2)) + "n"
+            var tone = (Math.floor(Math.random() * tones.length))
+            synth.triggerAttack(tones[tone], toneLenght)
+
+            var y = (((tone + (Math.random() / 2)) - tones.length) * -1) / 15 * (canvas.clientHeight + 8)
+            var x = Math.random() * (canvas.clientWidth + 8)
+            var release = Math.floor(Math.random() * 200 + 200)
+            createCircle(undefined, x, y, release)
+            setTimeout(function() {
+                synth.triggerRelease()
+            }, release);
+        }, Math.floor(Math.random() * 200 + 400));
+    }
+
+      randomMusicChange = setInterval(function() {
+        playRandomMusic();
+        setTimeout(function() {
+            clearInterval(randomMusic)
+        }, 499);
+      }, 500);
+
+}
+
+function stopRandomMusicFunction() {
+    startRandomMusic.style.display = "inline";
+    stopRandomMusic.style.display = "none";
+
+    clearInterval(randomMusic);
+    clearInterval(randomMusicChange);
+}
+
+startRandomMusic.addEventListener("click", startRandomMusicFunction)
+stopRandomMusic.addEventListener("click", stopRandomMusicFunction)
 
 
 
+/*record*/
+
+var startRecordAll = document.getElementById("startRecordAll")
+var stopRecordAll = document.getElementById("stopRecordAll")
+
+function startRecordAllFunction() {
+    startRecordAll.style.display = "none";
+    stopRecordAll.style.display = "inline";
+}
+
+function stopRecordAllFunction() {
+    startRecordAll.style.display = "inline";
+    stopRecordAll.style.display = "none";
+
+    var divOverlay = document.createElement("div");
+    divOverlay.id = "overlayRecord";
+    document.body.appendChild(divOverlay);
+
+    var divDownload = document.createElement("div");
+    divDownload.id = "downloadRecord";
+    document.body.appendChild(divDownload);
+
+}
+
+startRecordAll.addEventListener("click", startRecordAllFunction)
+stopRecordAll.addEventListener("click", stopRecordAllFunction)
 
 
 /*LOOPER*/
