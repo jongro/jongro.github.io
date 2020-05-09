@@ -9,9 +9,9 @@ reverb.wet.value = 1;
 var synth = new Tone.Synth({
     oscillator: {
       type: 'fatsawtooth',
-      partialCount : 20,
+      partialCount : 18,
       spread: 100,
-      count: 20
+      count: 10
     },
     envelope: {
       attack: 2,
