@@ -164,13 +164,11 @@ function stopRecordAllFunction() {
     startRecordAll.style.display = "inline";
     stopRecordAll.style.display = "none";
 
-    var divOverlay = document.createElement("div");
-    divOverlay.id = "overlayRecord";
-    document.body.appendChild(divOverlay);
+    var overlayRecord = document.getElementById("overlayRecord")
+    overlayRecord.style.display = "block"
 
-    var divDownload = document.createElement("div");
-    divDownload.id = "downloadRecord";
-    document.body.appendChild(divDownload);
+    var downloadRecord = document.getElementById("downloadRecord")
+    downloadRecord.style.display = "block"
 
 }
 
