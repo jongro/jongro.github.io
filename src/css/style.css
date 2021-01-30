@@ -73,11 +73,25 @@ section ul li img:hover {
     text-align: center;
 }
 
-#instagram {
+#contact {
     position: fixed;
     right: 0.8rem;
-    bottom: 0.8rem;
-    width: 2rem;
+    bottom: 0.4rem;
+    font-size: 0.8rem;
+    mix-blend-mode: exclusion;
+}
+
+#contact a {
+    display: block;
+    text-align: right;
+}
+
+#email {
+    width: 30px
+}
+
+#instagram {
+    width: 26px;
 }
 
 
