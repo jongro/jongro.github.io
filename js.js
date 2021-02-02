@@ -1,0 +1,9 @@
+
+
+text = document.getElementsByTagName("p")[0]
+
+text.addEventListener("click", fadeout);
+
+function fadeout() {
+    text.style.transform = "scale(0)"
+}

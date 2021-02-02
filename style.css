@@ -21,11 +21,7 @@ p {
     color: #d4d269;
     margin-bottom: 10vh;
     transition: 0.4s;
-    mix-blend-mode: exclusion;
-}
-
-p:hover {
-    transform: scale(1.3);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {
@@ -33,9 +29,3 @@ p:hover {
       font-size: 6vw;
     }
   }
-
-@media (hover: none) {
-    p:hover {
-        transform: scale(0);
-    }
-}
