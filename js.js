@@ -7,5 +7,5 @@ text.addEventListener("click", fadeout);
 function fadeout() {
     text.style.transform = "scale(0)";
     text.style.opacity = "0";
-    setTimeout(function(){document.title = '\u00A0';}, 700);
+    setTimeout(function(){document.title = '\u00A0';}, 750);
 }
