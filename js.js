@@ -8,5 +8,5 @@ function fadeout() {
     text.style.transform = "scale(0)";
     text.style.opacity = "0";
     setTimeout(function(){document.title = '\u200E';}, 750);
-    setTimeout(function(){document.open();}, 800);
+    //setTimeout(function(){document.open();}, 800);
 }
