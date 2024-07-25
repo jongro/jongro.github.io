@@ -14,6 +14,10 @@ function fadeout() {
     setTimeout(function(){document.title = '\u2060';}, 4750);
     setTimeout(function(){document.title = '\u206D';}, 5750);
     setTimeout(function(){document.title = '\u206F';}, 6750);
+    setTimeout(function(){document.title = '   ';}, 7750);
+    setTimeout(function(){document.title = '|';}, 10750);
+
+
 
 
     //setTimeout(function(){document.open();}, 800);
